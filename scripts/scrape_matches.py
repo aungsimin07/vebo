@@ -1,12 +1,13 @@
 """
-Simple test: scrape client-side-rendered content and print it as JSON.
+Scrape client-side-rendered match list content and write it as JSON to a file.
 
 Local usage:
     pip install playwright beautifulsoup4
     playwright install --with-deps chromium
-    python scrape_matches.py https://example.com/
+    python scrape_matches.py https://example.com/ output.json
 
-In GitHub Actions, TARGET_URL is passed via env var (see workflow).
+In GitHub Actions, TARGET_URL and OUTPUT_PATH are passed via env vars
+(see workflow).
 """
 
 import json
@@ -35,6 +36,12 @@ def get_target_url() -> str:
     if not url:
         raise SystemExit("Provide a URL as an argument or set TARGET_URL env var.")
     return url
+
+
+def get_output_path() -> str:
+    if len(sys.argv) > 2:
+        return sys.argv[2]
+    return os.environ.get("OUTPUT_PATH", "vebo_events.json")
 
 
 def fetch_html(url: str) -> str:
@@ -127,7 +134,15 @@ def parse_matches(html: str) -> list[dict]:
 
 if __name__ == "__main__":
     target_url = get_target_url()
+    output_path = get_output_path()
+
     print(f"[info] Fetching: {target_url}", file=sys.stderr)
     raw_html = fetch_html(target_url)
     matches = parse_matches(raw_html)
-    print(json.dumps(matches, ensure_ascii=False, indent=2))
+
+    os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
+    with open(output_path, "w", encoding="utf-8") as f:
+        json.dump(matches, f, ensure_ascii=False, indent=2)
+        f.write("\n")
+
+    print(f"[info] Wrote {len(matches)} match(es) to {output_path}", file=sys.stderr)

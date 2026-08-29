@@ -1,0 +1,57 @@
+name: Update Vebo Events
+
+on:
+  workflow_dispatch:
+    inputs:
+      targetUrl:
+        description: "URL to scrape"
+        required: true
+        type: string
+
+permissions:
+  contents: write
+
+jobs:
+  update-events:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Checkout Data Branch
+        uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Browsers
+        run: playwright install --with-deps chromium
+
+      - name: Run Scrape Script
+        env:
+          TARGET_URL: ${{ github.event.inputs.targetUrl }}
+          OUTPUT_PATH: data/vebo_events.json
+        run: python scripts/scrape_matches.py
+
+      - name: Commit and Push to Data Branch
+        run: |
+          cd data
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add vebo_events.json
+          if ! git diff --staged --quiet; then
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            git commit --amend -m "Automated data: Updated vebo_events.json at $TIMESTAMP"
+            git push --force origin data
+          else
+            echo "No vebo_events.json changes detected. Skipping commit."
+          fi
