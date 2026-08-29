@@ -40,11 +40,15 @@ def scrape(url: str) -> str:
 
         page.goto(url, wait_until="domcontentloaded", timeout=30000)
 
+        # Don't just wait for "any child" of #match-list — it starts out
+        # containing a loading spinner, which counts as a child and would
+        # make wait_for_selector return immediately before real data loads.
+        # Wait for the actual match card elements instead.
         try:
-            page.wait_for_selector(f"{TARGET_SELECTOR} *", timeout=15000)
+            page.wait_for_selector(f"{TARGET_SELECTOR} .match-card", timeout=20000)
         except Exception:
-            print(f"[warn] '{TARGET_SELECTOR}' had no children after 15s, "
-                  f"grabbing whatever is there now.", file=sys.stderr)
+            print(f"[warn] No '.match-card' appeared under '{TARGET_SELECTOR}' "
+                  f"after 20s, grabbing whatever is there now.", file=sys.stderr)
             page.wait_for_timeout(3000)
 
         element = page.query_selector(TARGET_SELECTOR)
