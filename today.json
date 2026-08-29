@@ -1,0 +1,30 @@
+{
+  "pre_morning": {
+    "status": "Open1",
+    "update_at": "17 Sep 2026 09:59:34",
+    "set": "1,577.06",
+    "value": "5,093.28",
+    "twod": "63"
+  },
+  "morning": {
+    "status": "Intermission",
+    "update_at": "17 Sep 2026 12:30:53",
+    "set": "1,579.50",
+    "value": "36,874.98",
+    "twod": "04"
+  },
+  "pre_evening": {
+    "status": "Open2",
+    "update_at": "17 Sep 2026 14:29:26",
+    "set": "1,582.22",
+    "value": "42,894.11",
+    "twod": "24"
+  },
+  "evening": {
+    "status": null,
+    "update_at": null,
+    "set": null,
+    "value": null,
+    "twod": null
+  }
+}
