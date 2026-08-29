@@ -1,0 +1,1040 @@
+{
+  "leagues": [
+    {
+      "strLeague": "Bóng đá Hạng 2 Uzbekistan",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T15:30:00+06:30",
+          "strHomeTeam": "Metallurg Bekabad",
+          "strHomeTeamBadge": "4aa9ac9ceebfd497212c8f17ab6c7162.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Aral Nukus",
+          "strAwayTeamBadge": "4904dff7aaee65b425e9062dea802e8f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/metallurg-bekabad-vs-aral-nukus-luc-1600-ngay-09-11-2026-wv78xivyed6cokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Cúp Ai Cập",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T19:00:00+06:30",
+          "strHomeTeam": "CLB Wadi Degla",
+          "strHomeTeamBadge": "0b565bf79378453da0982dfcf95ccc98.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Kahraba Ismailia",
+          "strAwayTeamBadge": "710c1aec087466a2e2177fb812c87dc8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-wadi-degla-vs-kahraba-ismailia-luc-1930-ngay-09-11-2026-jek33im6116b9ko"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Ngoại hạng Nga",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T17:30:00+06:30",
+          "strHomeTeam": "CLB Krylya Sovetov",
+          "strHomeTeamBadge": "b7782a595f2f82ed8daca72fd1f102de.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Gazovik Orenburg",
+          "strAwayTeamBadge": "0f5f64c52541a333596d8892b25aa310.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-krylya-sovetov-vs-gazovik-orenburg-luc-1800-ngay-08-11-2026-vmqy9iv5p3dhgk9"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T03:00:00+06:30",
+          "strHomeTeam": "Sporting",
+          "strHomeTeamBadge": "6a5153c73922a32013b9bc6cfbc20b26.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Moreirense",
+          "strAwayTeamBadge": "ee5b1bcc98e7232350988a477974fb26.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/sporting-vs-moreirense-luc-0330-ngay-08-11-2026-xvkjoi8jx5ga879"
+        },
+        {
+          "strTimestamp": "2026-11-09T03:00:00+06:30",
+          "strHomeTeam": "Estrela",
+          "strHomeTeamBadge": "606eca9e363f1c1e62542f8b23fdc71a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Benfica",
+          "strAwayTeamBadge": "78360445c12fa3fdc8b489486fff4eb6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/estrela-vs-benfica-luc-0330-ngay-09-11-2026-ndqmliw6pjzsrkv"
+        },
+        {
+          "strTimestamp": "2026-11-09T03:00:00+06:30",
+          "strHomeTeam": "Rio Ave",
+          "strHomeTeamBadge": "e83b163c8501f897012bcc29adfae2b9.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Braga",
+          "strAwayTeamBadge": "1fe75f826dab40e6e89cbe961c7e9116.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/rio-ave-vs-braga-luc-0330-ngay-09-11-2026-ezk96i39ymlt1kn"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Vô địch Quốc gia Hà Lan",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T17:45:00+06:30",
+          "strHomeTeam": "SC Heerenveen",
+          "strHomeTeamBadge": "c2cd1a6cdd056ae31e0712d5f4f97c9b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Feyenoord",
+          "strAwayTeamBadge": "44073f2d2c979a9388f98505ac3b754d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/sc-heerenveen-vs-feyenoord-luc-1815-ngay-08-11-2026-8lk2dirpv85iz73"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:00:00+06:30",
+          "strHomeTeam": "Twente",
+          "strHomeTeamBadge": "7a2d0c79dd5d8589167c88684ac55aca.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ AFC Ajax",
+          "strAwayTeamBadge": "187929503752357480bce47813a9741f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/twente-vs-cau-lac-bo-afc-ajax-luc-2030-ngay-08-11-2026-63kv9ige389hx7e"
+        },
+        {
+          "strTimestamp": "2026-11-08T22:15:00+06:30",
+          "strHomeTeam": "Cambuur",
+          "strHomeTeamBadge": "d5cd028beef8bae114183a2635742176.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "PSV Eindhoven",
+          "strAwayTeamBadge": "cad5af4d1ff0e6f3119af3d273d95d31.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/cambuur-vs-psv-eindhoven-luc-2245-ngay-08-11-2026-34kgmio30x2teko"
+        },
+        {
+          "strTimestamp": "2026-11-09T01:30:00+06:30",
+          "strHomeTeam": "Utrecht",
+          "strHomeTeamBadge": "181ee8709b75f543a1cf4c943ae3304b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB NEC Nijmegen",
+          "strAwayTeamBadge": "d22de494a1ff648e90892c249c5aed12.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/utrecht-vs-clb-nec-nijmegen-luc-0200-ngay-09-11-2026-jek33i8r3eeh9ko"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải K1 Hàn Quốc",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T11:30:00+06:30",
+          "strHomeTeam": "CLB Seoul",
+          "strHomeTeamBadge": "ad010af729c420626d1865ad744168d3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Ulsan Hyundai",
+          "strAwayTeamBadge": "fe07fb888ebcb282192332cb8aed21b1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-seoul-vs-clb-ulsan-hyundai-luc-1200-ngay-08-11-2026-o17pji403rxby7j"
+        },
+        {
+          "strTimestamp": "2026-11-08T11:30:00+06:30",
+          "strHomeTeam": "Daejeon",
+          "strHomeTeamBadge": "090eeb1513e8f1d0cf6d8647d10b2eea.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Incheon United",
+          "strAwayTeamBadge": "36559689046e7d1d4f597c1a0bf9c5d6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/daejeon-vs-incheon-united-luc-1200-ngay-08-11-2026-jr7owiy6nl5tgq0"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Bucheon FC 1995",
+          "strHomeTeamBadge": "640f8c62cb294e1cc308a44ed2a62891.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Pohang Steelers",
+          "strAwayTeamBadge": "6f05c460789939ac83282bd0686446f1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/bucheon-fc-1995-vs-clb-pohang-steelers-luc-1430-ngay-08-11-2026-9gklzi509ygbm7x"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Gangwon",
+          "strHomeTeamBadge": "771a93ae7f62b1a47a71c3d62b89dca3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Jeonbuk Hyundai Motors",
+          "strAwayTeamBadge": "ee2117f952745163fecfa4b74a6a2bea.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/gangwon-vs-clb-jeonbuk-hyundai-motors-luc-1430-ngay-08-11-2026-ndkz6i2zg9mcxq3"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Ngoại hạng Thổ Nhĩ Kỳ",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T17:00:00+06:30",
+          "strHomeTeam": "Rizespor",
+          "strHomeTeamBadge": "be9dd7715b88e662d366df132c630f72.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Erzurum BB",
+          "strAwayTeamBadge": "1a02b3bb5ec75b6ca8430c57915ac922.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/rizespor-vs-erzurum-bb-luc-1730-ngay-08-11-2026-34kgmio8w6mceko"
+        },
+        {
+          "strTimestamp": "2026-11-08T19:30:00+06:30",
+          "strHomeTeam": "CLB Corum Belediyespor",
+          "strHomeTeamBadge": "0f2a369af39d8b5f8de389cca2a217ad.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Fenerbahce",
+          "strAwayTeamBadge": "dff00f1fd4a7dd2feac000b462416867.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-corum-belediyespor-vs-fenerbahce-luc-2000-ngay-08-11-2026-9gklzi12pd0sm7x"
+        },
+        {
+          "strTimestamp": "2026-11-09T00:30:00+06:30",
+          "strHomeTeam": "Besiktas JK",
+          "strHomeTeamBadge": "83ba0474d144e49f060789cfa904e226.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Genclerbirligi",
+          "strAwayTeamBadge": "ec111e88997dce5a5f76c26b8e85d7f3.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/besiktas-jk-vs-genclerbirligi-luc-0100-ngay-09-11-2026-jr7owip9m4xigq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Ngoại hạng Đan Mạch",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T17:30:00+06:30",
+          "strHomeTeam": "FC Copenhagen",
+          "strHomeTeamBadge": "629b6f983d0ca3c33f2c4b50b3449314.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Brondby",
+          "strAwayTeamBadge": "625f6bad4acc37546d2f2373b89b7c89.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/fc-copenhagen-vs-brondby-luc-1800-ngay-08-11-2026-8lk2dirpym9cz73"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Vô địch Bóng đá Quốc gia Mexico",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T05:30:00+06:30",
+          "strHomeTeam": "Atlas",
+          "strHomeTeamBadge": "a3316e9ee8fe7b3a279a10d61d0b2f87.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Pachuca",
+          "strAwayTeamBadge": "cff411edceeeb7c1677d9db65ce47164.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/atlas-vs-pachuca-luc-0600-ngay-08-11-2026-oj7x9ixj069b47g"
+        },
+        {
+          "strTimestamp": "2026-11-08T07:30:00+06:30",
+          "strHomeTeam": "Tigres",
+          "strHomeTeamBadge": "a7df6424c12ac9b7a6e5ca3ff953d5b3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Cruz Azul",
+          "strAwayTeamBadge": "2addd50487c8f61276d5fff8714f6a5c.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/tigres-vs-cruz-azul-luc-0800-ngay-08-11-2026-vmqy9iv9wprcgk9"
+        },
+        {
+          "strTimestamp": "2026-11-08T07:30:00+06:30",
+          "strHomeTeam": "Toluca",
+          "strHomeTeamBadge": "725ccd5793be6b4f8dd917170dd17d04.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Monterrey",
+          "strAwayTeamBadge": "5c3f819a35454f424d85df5757650f8b.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/toluca-vs-monterrey-luc-0800-ngay-08-11-2026-o17pjiom9z3cy7j"
+        },
+        {
+          "strTimestamp": "2026-11-08T09:30:00+06:30",
+          "strHomeTeam": "U.N.A.M.- Pumas",
+          "strHomeTeamBadge": "7654a95374767f93f6bec6a3d4819f76.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Club America",
+          "strAwayTeamBadge": "775a930b77d31e8f8a6d6ba8afc17c03.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/unam-pumas-vs-club-america-luc-1000-ngay-08-11-2026-jr7owip81jvtgq0"
+        },
+        {
+          "strTimestamp": "2026-11-09T06:30:00+06:30",
+          "strHomeTeam": "Queretaro",
+          "strHomeTeamBadge": "e93c69c95a943755907a17adf4d7d732.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Puebla",
+          "strAwayTeamBadge": "a98bd615308472b65dc82bcc3a2d54fb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/queretaro-vs-clb-puebla-luc-0700-ngay-09-11-2026-9gklzi1er3pim7x"
+        },
+        {
+          "strTimestamp": "2026-11-09T08:30:00+06:30",
+          "strHomeTeam": "Club Leon",
+          "strHomeTeamBadge": "4695f653aca6ac49ff2baa4a961fa67b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chivas Guadalajara",
+          "strAwayTeamBadge": "872867a492989e6a9a0785cfd0a40680.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/club-leon-vs-chivas-guadalajara-luc-0900-ngay-09-11-2026-ndkz6i3yj9jsxq3"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Hạng nhất Áo",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T22:30:00+06:30",
+          "strHomeTeam": "Sturm Graz",
+          "strHomeTeamBadge": "4cc9044aed34f71c4e79bd260ea938fb.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Red Bull Salzburg",
+          "strAwayTeamBadge": "4e07d3ac5c7d1f02fba7fa4c14c8ee76.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/sturm-graz-vs-fc-red-bull-salzburg-luc-2300-ngay-08-11-2026-edq09ilzy6wheqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Liga 1 Indonesia",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T15:00:00+06:30",
+          "strHomeTeam": "Bali United",
+          "strHomeTeamBadge": "09fe2ecf88f68970da755f8655d5da8a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Persik Kediri",
+          "strAwayTeamBadge": "c80d70c62b8f67dd121a1be0d574bfd5.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/bali-united-vs-clb-persik-kediri-luc-1530-ngay-08-11-2026-527r3i4g2vpf47e"
+        },
+        {
+          "strTimestamp": "2026-11-08T15:00:00+06:30",
+          "strHomeTeam": "CLB PSS Sleman",
+          "strHomeTeamBadge": "20bf90d9a55ef5dc4a503754db3f8b49.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bhayangkara Solo",
+          "strAwayTeamBadge": "837cf9a178940067578b7343018e003a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-pss-sleman-vs-bhayangkara-solo-luc-1530-ngay-08-11-2026-wv78xivl9j3bokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá ngoại hạng Trung Quốc",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Shanghai Shenhua",
+          "strHomeTeamBadge": "e8327d4681b4a73c83be9fe087b30721.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Qingdao West Coast",
+          "strAwayTeamBadge": "383d42e0d0843463b538bc3367d0c4c9.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/shanghai-shenhua-vs-qingdao-west-coast-luc-1430-ngay-08-11-2026-wv78xivvm3vsokr"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Shandong Taishan",
+          "strHomeTeamBadge": "85c080cf02a7161687ddd5b5800dc303.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chengdu Rongcheng",
+          "strAwayTeamBadge": "6ade4c9aaa615702eb7ec459e56d1968.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/shandong-taishan-vs-chengdu-rongcheng-luc-1430-ngay-08-11-2026-34kgmiooe0lbeko"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Shanghai Port",
+          "strHomeTeamBadge": "c4e143e537412003565cdb7c2d212538.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Shenyang Urban FC",
+          "strAwayTeamBadge": "1c4ae95c663ed84758a04627451e3470.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/shanghai-port-vs-shenyang-urban-fc-luc-1430-ngay-08-11-2026-ndkz6i33jgnsxq3"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:00:00+06:30",
+          "strHomeTeam": "Câu lạc bộ bóng đá Zhixing Đại Liên",
+          "strHomeTeamBadge": "0e5467034917e26c6e60a7162711c150.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Tianjin Jinmen Tiger",
+          "strAwayTeamBadge": "e0080960b4e935d70f4037aaf3a0b917.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/cau-lac-bo-bong-da-zhixing-dai-lien-vs-tianjin-jinmen-tiger-luc-1430-ngay-08-11-2026-edq09illo8jteqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải hạng hai quốc gia Bulgaria",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T19:00:00+06:30",
+          "strHomeTeam": "CSKA Sofia B",
+          "strHomeTeamBadge": "083e0addbc14f4bceafdb62f92bea16c.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Rilski Sportist",
+          "strAwayTeamBadge": "ee75ac1590299f6c1ea0d4162c40d28c.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/cska-sofia-b-vs-rilski-sportist-luc-1930-ngay-09-11-2026-edq09ilzj2yfeqx"
+        },
+        {
+          "strTimestamp": "2026-11-09T19:00:00+06:30",
+          "strHomeTeam": "FK Chernomorets 1919 Burgas",
+          "strHomeTeamBadge": "eee07e98c33dbee589b014d04141ee48.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Yantra Gabrovo",
+          "strAwayTeamBadge": "adf70d2a31395856a19700a307eadd4a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/fk-chernomorets-1919-burgas-vs-yantra-gabrovo-luc-1930-ngay-09-11-2026-wv78xivr913iokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải hạng nhất quốc gia Serbia",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T21:30:00+06:30",
+          "strHomeTeam": "Napredak",
+          "strHomeTeamBadge": "7d35c67da2b80a3092e25e784ce21762.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bor 1919",
+          "strAwayTeamBadge": "83f08380c7ca9df5cf05fe86f423ca34.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/napredak-vs-bor-1919-luc-2200-ngay-09-11-2026-l6kegi8o9eecv75"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải ngoại hạng Mông Cổ",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T11:30:00+06:30",
+          "strHomeTeam": "Erchim",
+          "strHomeTeamBadge": "c8188e3985db5cee9be1f4ea436f2fc2.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Khovd Western",
+          "strAwayTeamBadge": "9ae36debba0abd59c01de2e60fc42648.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/erchim-vs-khovd-western-luc-1200-ngay-09-11-2026-ndkz6i2zo08bxq3"
+        },
+        {
+          "strTimestamp": "2026-11-09T14:30:00+06:30",
+          "strHomeTeam": "Ulaangom City FC",
+          "strHomeTeamBadge": "cc0f42f7eec708cb429156b1becb3f93.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Khovd",
+          "strAwayTeamBadge": "c8550c96c10f3e6cc1e5525c35fdb220.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/ulaangom-city-fc-vs-khovd-luc-1500-ngay-09-11-2026-527r3i3eyzva47e"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Ba Lan",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T01:45:00+06:30",
+          "strHomeTeam": "Lech Poznan",
+          "strHomeTeamBadge": "d49ab93fbac0f4602293bac98b94d9c0.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Zaglebie Lubin",
+          "strAwayTeamBadge": "9d70c0303c9942dc0be30cc7e1fe4673.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/lech-poznan-vs-zaglebie-lubin-luc-0215-ngay-09-11-2026-jr7owip89pycgq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Việt Nam",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T18:45:00+06:30",
+          "strHomeTeam": "Thể Công - Viettel",
+          "strHomeTeamBadge": "840e2d7165cf2a34ec6c65a1fd9b58a9.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Đông Á Thanh Hóa",
+          "strAwayTeamBadge": "c6c3cf855ef4fd3a0385d34606a858ab.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/the-cong-viettel-vs-dong-a-thanh-hoa-luc-1915-ngay-08-11-2026-jr7owipemoehgq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Úc",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T10:30:00+06:30",
+          "strHomeTeam": "CLB Macarthur",
+          "strHomeTeamBadge": "d7c8728e57f2aec43b46422d3d37ab9e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Brisbane Roar",
+          "strAwayTeamBadge": "a6bdb997f37f85a411b14348fb35c2ee.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-macarthur-vs-clb-brisbane-roar-luc-1100-ngay-08-11-2026-527r3i4del5b47e"
+        },
+        {
+          "strTimestamp": "2026-11-08T12:30:00+06:30",
+          "strHomeTeam": "CLB Adelaide United",
+          "strHomeTeamBadge": "e5f515e5720cd281a1a53ce2950992b1.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Melbourne Victory",
+          "strAwayTeamBadge": "04230721124ae33d7fb527413b54106f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-adelaide-united-vs-melbourne-victory-luc-1300-ngay-08-11-2026-ndkz6i3pz3psxq3"
+        }
+      ]
+    },
+    {
+      "strLeague": "ကိုလံဘီယာ - Primera A",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T05:40:00+06:30",
+          "strHomeTeam": "Deportes Tolima",
+          "strHomeTeamBadge": "40f17f08ff7bb44a641273044db78c64.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Millonarios",
+          "strAwayTeamBadge": "88bf2a10fe7e8d3f9a21b73f3f77fcde.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/deportes-tolima-vs-clb-millonarios-luc-0610-ngay-09-11-2026-wv78xivr80eaokr"
+        },
+        {
+          "strTimestamp": "2026-11-09T07:45:00+06:30",
+          "strHomeTeam": "CLB Alianza Petrolera",
+          "strHomeTeamBadge": "242d6977e9b86cba5cea704d996edbf8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Llaneros FC",
+          "strAwayTeamBadge": "f83a93401d7a60595338bae0337d344c.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-alianza-petrolera-vs-llaneros-fc-luc-0815-ngay-09-11-2026-jr7owip4r5zagq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျပန် - Japanese J1 League",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T11:30:00+06:30",
+          "strHomeTeam": "Vissel Kobe",
+          "strHomeTeamBadge": "d85cce27ab583e5b3cead155f02b098a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Urawa Reds",
+          "strAwayTeamBadge": "ca15e36551392e8c99b53b5b2f8531d3.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/vissel-kobe-vs-urawa-reds-luc-1200-ngay-08-11-2026-8lk2dirpx6yaz73"
+        },
+        {
+          "strTimestamp": "2026-11-08T11:30:00+06:30",
+          "strHomeTeam": "Machida",
+          "strHomeTeamBadge": "539c489a7bd94dd9d785308fd0f0a6b9.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Sanfrecce Hiroshima",
+          "strAwayTeamBadge": "c81d5ff7a33a4f6a9312a8703f619352.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/machida-vs-sanfrecce-hiroshima-luc-1200-ngay-08-11-2026-xvkjoi8y08rc879"
+        },
+        {
+          "strTimestamp": "2026-11-08T12:30:00+06:30",
+          "strHomeTeam": "Gamba Osaka",
+          "strHomeTeamBadge": "91008a96b5de8c75376d17057f89890e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Cerezo Osaka",
+          "strAwayTeamBadge": "ab10ee503e539e55a9a11a9ff202405a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/gamba-osaka-vs-cerezo-osaka-luc-1300-ngay-08-11-2026-527r3i4xnnyu47e"
+        },
+        {
+          "strTimestamp": "2026-11-08T14:30:00+06:30",
+          "strHomeTeam": "Chiba",
+          "strHomeTeamBadge": "9ce2dfe0c36e6a9774eaecf9731375b6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Mito Hollyhock",
+          "strAwayTeamBadge": "9ead844240532c4e12d3eb45d2087924.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/chiba-vs-mito-hollyhock-luc-1500-ngay-08-11-2026-o07dni5pwwpbmkn"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျာမနီ - Bundesliga",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T21:00:00+06:30",
+          "strHomeTeam": "1. FC Köln",
+          "strHomeTeamBadge": "887b7663a0d47031528921d9972ae3a6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bayer 04 Leverkusen",
+          "strAwayTeamBadge": "d3205f3ddca07dc01c822ea0de24a0e7.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/1-fc-kln-vs-bayer-04-leverkusen-luc-2130-ngay-08-11-2026-ndqmliwv5v2trkv"
+        },
+        {
+          "strTimestamp": "2026-11-08T23:00:00+06:30",
+          "strHomeTeam": "SC Freiburg",
+          "strHomeTeamBadge": "6508946c9a5fe22a8784b905b25e8c79.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "1. FC Union Berlin",
+          "strAwayTeamBadge": "45ab4c846b0d4df5b002c571b16112dc.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/sc-freiburg-vs-1-fc-union-berlin-luc-2330-ngay-08-11-2026-63kv9igl3lvix7e"
+        },
+        {
+          "strTimestamp": "2026-11-09T01:00:00+06:30",
+          "strHomeTeam": "TSG 1899 Hoffenheim",
+          "strHomeTeamBadge": "72ab7862a610b350aef7650ec0e06e06.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Schalke 04",
+          "strAwayTeamBadge": "4533ab7ef9ad5e53c981f7ea7bea7033.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/tsg-1899-hoffenheim-vs-fc-schalke-04-luc-0130-ngay-09-11-2026-69759ig4148bgk2"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျာမနီ - Bundesliga 2",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T19:00:00+06:30",
+          "strHomeTeam": "CLB Magdeburg",
+          "strHomeTeamBadge": "e4dba0e2b72f3f545ece098b91b811a1.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "St. Pauli",
+          "strAwayTeamBadge": "65503b155488a643de688e8dfa849b1f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-magdeburg-vs-st-pauli-luc-1930-ngay-08-11-2026-j374oi0mndpbgqo"
+        },
+        {
+          "strTimestamp": "2026-11-08T19:00:00+06:30",
+          "strHomeTeam": "Heidenheimer",
+          "strHomeTeamBadge": "65ee743f20fa7db286fdeda4d33c6980.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hannover 96",
+          "strAwayTeamBadge": "1800be60204966114d63970b5d0873da.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/heidenheimer-vs-hannover-96-luc-1930-ngay-08-11-2026-zrkn6i4w0louwql"
+        },
+        {
+          "strTimestamp": "2026-11-08T19:00:00+06:30",
+          "strHomeTeam": "VfL Bochum",
+          "strHomeTeamBadge": "51e1cbc15a7ae90e176b1c1dfb096928.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB KSC",
+          "strAwayTeamBadge": "1d2fde8b4cbd9adc503dc5351e24513d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/vfl-bochum-vs-clb-ksc-luc-1930-ngay-08-11-2026-jr7owip4v6mhgq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "စပိန် - LaLiga",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T02:30:00+06:30",
+          "strHomeTeam": "Valencia CF",
+          "strHomeTeamBadge": "3b54543c1a584e2e9948d655142996d3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Real Madrid CF",
+          "strAwayTeamBadge": "7dacaa934fe4be00f23c1e209b5ef947.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/valencia-cf-vs-real-madrid-cf-luc-0300-ngay-08-11-2026-ndkz6i30r16sxq3"
+        },
+        {
+          "strTimestamp": "2026-11-08T19:30:00+06:30",
+          "strHomeTeam": "Elche",
+          "strHomeTeamBadge": "e5ecd0553885f1a3af731758dddce2ec.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Real Betis Balompié",
+          "strAwayTeamBadge": "018e260ad68bdad741c61e3171c4c608.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/elche-vs-real-betis-balompie-luc-2000-ngay-08-11-2026-g6763i58401io7r"
+        },
+        {
+          "strTimestamp": "2026-11-08T21:45:00+06:30",
+          "strHomeTeam": "Real Sociedad",
+          "strHomeTeamBadge": "579db6e95905545973035e6eab8df2cd.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Rayo Vallecano",
+          "strAwayTeamBadge": "5005d8feab109ce64e40beb98073cc1f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/real-sociedad-vs-rayo-vallecano-luc-2215-ngay-08-11-2026-vmqy9iv5rm6igk9"
+        },
+        {
+          "strTimestamp": "2026-11-09T00:00:00+06:30",
+          "strHomeTeam": "Celta Vigo",
+          "strHomeTeamBadge": "fd954d083ee85a6f1a3f2471dc756242.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Levante",
+          "strAwayTeamBadge": "13e2038bd23a38ce32a3eb259c8bf7d8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/celta-vigo-vs-clb-levante-luc-0030-ngay-09-11-2026-j374oi0mv5jugqo"
+        },
+        {
+          "strTimestamp": "2026-11-09T00:00:00+06:30",
+          "strHomeTeam": "Câu lạc bộ bóng đá Villarreal",
+          "strHomeTeamBadge": "aee62af96a956756cc29fe4831286357.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Getafe CF",
+          "strAwayTeamBadge": "36bf5bf0c8fdf08c1270124808f060e1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/cau-lac-bo-bong-da-villarreal-vs-getafe-cf-luc-0030-ngay-09-11-2026-wv78xivrn5xaokr"
+        },
+        {
+          "strTimestamp": "2026-11-09T02:30:00+06:30",
+          "strHomeTeam": "Atlético Madrid",
+          "strHomeTeamBadge": "390977b0421bce136c562057ea171ecf.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Barcelona",
+          "strAwayTeamBadge": "f378eb1ea04e53999b89051aa3244de6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/atletico-madrid-vs-fc-barcelona-luc-0300-ngay-09-11-2026-edq09ilz9g4aeqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "ပြင်သစ် - Ligue 1",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T00:30:00+06:30",
+          "strHomeTeam": "AJ Auxerre",
+          "strHomeTeamBadge": "8c03e57af9e8bec20a3ed2f5aaddf78b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Paris FC",
+          "strAwayTeamBadge": "83a982f8219a768e7cd29d1ac765b199.png!w80",
+          "intAwayScore": 1,
+          "strStatus": "1H",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/aj-auxerre-vs-paris-fc-luc-0100-ngay-08-11-2026-xvkjoi8yx4wb879"
+        },
+        {
+          "strTimestamp": "2026-11-08T02:35:00+06:30",
+          "strHomeTeam": "Paris Saint-Germain",
+          "strHomeTeamBadge": "3b720f181ce9993f9422d276acf7b292.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Troyes AC",
+          "strAwayTeamBadge": "951a522c131e8d2a0a32185858ba6300.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/paris-saint-germain-vs-troyes-ac-luc-0305-ngay-08-11-2026-vmqy9iv98gesgk9"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "Stade Rennais",
+          "strHomeTeamBadge": "eab8f0e847742fd328bb581299bd99ca.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Lille OSC",
+          "strAwayTeamBadge": "28e94925fdcc848f86a544a1cedcceed.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/stade-rennais-vs-lille-osc-luc-2100-ngay-08-11-2026-o17pjiomp20cy7j"
+        },
+        {
+          "strTimestamp": "2026-11-08T22:45:00+06:30",
+          "strHomeTeam": "Stade Brestois 29",
+          "strHomeTeamBadge": "bb7e6346a3860008e4ff266ba3b655e8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Olympique Lyonnais",
+          "strAwayTeamBadge": "92fb3cf79ea2ba919b94b04668e13491.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/stade-brestois-29-vs-olympique-lyonnais-luc-2315-ngay-08-11-2026-m2q15izxnvvue76"
+        },
+        {
+          "strTimestamp": "2026-11-08T22:45:00+06:30",
+          "strHomeTeam": "Le Havre",
+          "strHomeTeamBadge": "8fd50a53dad5ea4fd2d32bd3ce727f58.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Lorient",
+          "strAwayTeamBadge": "b593727321793084b1f7804aebedc31a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/le-havre-vs-fc-lorient-luc-2315-ngay-08-11-2026-zrkn6i4gnxziwql"
+        },
+        {
+          "strTimestamp": "2026-11-08T22:45:00+06:30",
+          "strHomeTeam": "Le Mans",
+          "strHomeTeamBadge": "5de17e3d35ef312559baf1f8c0b0b585.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "AS Monaco",
+          "strAwayTeamBadge": "693af0d277fe3179594695614dce8666.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/le-mans-vs-as-monaco-luc-2315-ngay-08-11-2026-oj7x9ixj35ot47g"
+        },
+        {
+          "strTimestamp": "2026-11-08T22:45:00+06:30",
+          "strHomeTeam": "Angers SCO",
+          "strHomeTeamBadge": "526150064f4f983d670deb33fa6385b6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "OGC Nice",
+          "strAwayTeamBadge": "ff8991853f7aabce7cb66f09cda0c58e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/angers-sco-vs-ogc-nice-luc-2315-ngay-08-11-2026-l6kegi8npodav75"
+        },
+        {
+          "strTimestamp": "2026-11-09T02:15:00+06:30",
+          "strHomeTeam": "RC Lens",
+          "strHomeTeamBadge": "b8c5038ebb0e21b09a72008b7cb6219f.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Olympique de Marseille",
+          "strAwayTeamBadge": "a450173b3d636ba2c86d3d7c5bdc4026.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/rc-lens-vs-olympique-de-marseille-luc-0245-ngay-09-11-2026-9gklzi1eoz3fm7x"
+        }
+      ]
+    },
+    {
+      "strLeague": "ယူအက်စ်အေ - Major League Soccer",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T03:30:00+06:30",
+          "strHomeTeam": "Inter Miami",
+          "strHomeTeamBadge": "976fe1d29c112f4baeb844cdda2f04cb.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Charlotte FC",
+          "strAwayTeamBadge": "5c01731e3c513a3797c85b95c436e0d9.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/inter-miami-vs-charlotte-fc-luc-0400-ngay-08-11-2026-ndqmliw8yxourkv"
+        },
+        {
+          "strTimestamp": "2026-11-08T06:30:00+06:30",
+          "strHomeTeam": "Real Salt Lake",
+          "strHomeTeamBadge": "98a89cba4bbd10c0ceb437d8f795d43b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB LA Galaxy",
+          "strAwayTeamBadge": "8ef755c4d2e1aed96dc5d291977c1043.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/real-salt-lake-vs-clb-la-galaxy-luc-0700-ngay-08-11-2026-vmqy9ivwxjlugk9"
+        }
+      ]
+    },
+    {
+      "strLeague": "ရိုမေးနီးယား - Liga 2",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T19:00:00+06:30",
+          "strHomeTeam": "ASU Poli Timisoara",
+          "strHomeTeamBadge": "17b8fef58d3a87d02120d6c5ccbe5755.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Scolar Resita",
+          "strAwayTeamBadge": "c6c5bb133999f12570e9c2dd4b1d69a6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/asu-poli-timisoara-vs-scolar-resita-luc-1930-ngay-09-11-2026-69759igpd95agk2"
+        }
+      ]
+    },
+    {
+      "strLeague": "အင်္ဂလန် - Premier League",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "CLB Ipswich Town",
+          "strHomeTeamBadge": "cec3eaaa5271c1f2f036469593ecbcd8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ bóng đá Bournemouth",
+          "strAwayTeamBadge": "240b30d333c97d293752ab7afd77ccd6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-ipswich-town-vs-cau-lac-bo-bong-da-bournemouth-luc-2100-ngay-08-11-2026-34kgmio36ewbeko"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "Sunderland",
+          "strHomeTeamBadge": "957bdc50c307e2a9b526b34b3792da1a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chelsea",
+          "strAwayTeamBadge": "b365ad0e85e2b1bcbf63f7a0f2f70a79.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/sunderland-vs-chelsea-luc-2100-ngay-08-11-2026-m2q15izx3wjie76"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "Brighton & Hove Albion FC",
+          "strHomeTeamBadge": "9b43a690d5a09f1e319f036821e8e1d3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ bóng đá Brentford",
+          "strAwayTeamBadge": "60f1c7788be3148a370dbf59f914abfe.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/brighton-hove-albion-fc-vs-cau-lac-bo-bong-da-brentford-luc-2100-ngay-08-11-2026-l6kegi8n532sv75"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "Crystal Palace",
+          "strHomeTeamBadge": "42396d18444156e640c37476c2b41b93.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Liverpool",
+          "strAwayTeamBadge": "1cb3d08adac0e2dc1c4f10429d055bfe.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/crystal-palace-vs-liverpool-luc-2100-ngay-08-11-2026-vmqy9iv95wjbgk9"
+        },
+        {
+          "strTimestamp": "2026-11-08T23:00:00+06:30",
+          "strHomeTeam": "Manchester United",
+          "strHomeTeamBadge": "d39ce586fd7278342dde33b3090b3f75.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Aston Villa",
+          "strAwayTeamBadge": "a3c32d6a906083118cac2cb796edaab3.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/manchester-united-vs-aston-villa-luc-2330-ngay-08-11-2026-j374oi0ym3ycgqo"
+        }
+      ]
+    },
+    {
+      "strLeague": "အာဂျင်တီးနား - Liga Profesional de Fútbol",
+      "events": [
+        {
+          "strTimestamp": "2026-11-09T05:00:00+06:30",
+          "strHomeTeam": "Central Cordoba SDE",
+          "strHomeTeamBadge": "73eb62698518ab54028aee31105931ae.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Lanus",
+          "strAwayTeamBadge": "caff6f729db9dc68b1938f6533b0fa14.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/central-cordoba-sde-vs-lanus-luc-0530-ngay-09-11-2026-69759igd0ddugk2"
+        }
+      ]
+    },
+    {
+      "strLeague": "အီတလီ - Serie A",
+      "events": [
+        {
+          "strTimestamp": "2026-11-08T02:15:00+06:30",
+          "strHomeTeam": "A.S. Roma",
+          "strHomeTeamBadge": "7a192686d30c1ad031d2fb605eaf2f2a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "U.S. Sassuolo Calcio",
+          "strAwayTeamBadge": "616bf242a532f72e970648f2ead423cf.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/as-roma-vs-us-sassuolo-calcio-luc-0245-ngay-08-11-2026-jr7owip869pigq0"
+        },
+        {
+          "strTimestamp": "2026-11-08T18:00:00+06:30",
+          "strHomeTeam": "S.S.C. Napoli",
+          "strHomeTeamBadge": "37ed13d27edccd30e053167962c02b3a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "S.S. Lazio",
+          "strAwayTeamBadge": "5a2ff46efa33abc6b2908eb6279dfbf8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/ssc-napoli-vs-ss-lazio-luc-1830-ngay-08-11-2026-g6763i5ovmgso7r"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "A.C. Monza",
+          "strHomeTeamBadge": "18ccab720cfda6be0c39fef579c13c5a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Atalanta B.C.",
+          "strAwayTeamBadge": "45c9647899b8bf2fb6f988c6c33b964c.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/ac-monza-vs-atalanta-bc-luc-2100-ngay-08-11-2026-ndkz6i3yzpdcxq3"
+        },
+        {
+          "strTimestamp": "2026-11-08T20:30:00+06:30",
+          "strHomeTeam": "CLB Genoa",
+          "strHomeTeamBadge": "51474fb68c7da46b9c20ebddccec7766.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "AC Milan",
+          "strAwayTeamBadge": "643ef4101b017dc1495dbd9e9d5cce28.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/clb-genoa-vs-ac-milan-luc-2100-ngay-08-11-2026-34kgmio3288aeko"
+        },
+        {
+          "strTimestamp": "2026-11-08T23:30:00+06:30",
+          "strHomeTeam": "Inter Milan",
+          "strHomeTeamBadge": "aa2245702c40f77799a5ad4b119581a8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Calcio Como",
+          "strAwayTeamBadge": "5f7059f40965e5a2cc00987e6bac2f32.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/inter-milan-vs-calcio-como-luc-0000-ngay-09-11-2026-jek33i8r6nwt9ko"
+        },
+        {
+          "strTimestamp": "2026-11-09T02:15:00+06:30",
+          "strHomeTeam": "ACF Fiorentina",
+          "strHomeTeamBadge": "858d87ded0cce014bae0c9681af48524.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Juventus F.C.",
+          "strAwayTeamBadge": "dc0e43b95c6676c54415bac168472aa4.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://cakhiatv-link5.cc/truc-tiep/acf-fiorentina-vs-juventus-fc-luc-0245-ngay-09-11-2026-vrqwni45o5df4qn"
+        }
+      ]
+    }
+  ]
+}
