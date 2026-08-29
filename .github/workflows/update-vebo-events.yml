@@ -40,6 +40,7 @@ jobs:
         env:
           TARGET_URL: ${{ github.event.inputs.targetUrl }}
           OUTPUT_PATH: data/vebo_events.json
+          LEAGUE_MAP_JSON: ${{ vars.LEAGUE_MAP_JSON }}
         run: python scripts/scrape_matches.py
 
       - name: Commit and Push to Data Branch

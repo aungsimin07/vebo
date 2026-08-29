@@ -32,16 +32,27 @@ STATUS_MAP = {
     "CHƯA BẮT ĐẦU": "Upcoming",
 }
 
-LEAGUE_MAP = {
-    "AFC Giải vô địch Champions 2": "AFC Champions League Two",
-    "Cúp Bóng đá Châu Á U20": "AFC U20 Asian Cup",
-    "Giải bóng đá Serie A Italia": "Italy Serie A",
-    "Giải bóng đá Ngoại hạng Anh": "England Premier League",
-    "Giải bóng đá Hạng hai Đức": "Germany Bundesliga 2",
-    "Giải Vô địch quốc gia Ả-rập Xê-út": "Saudi Pro League",
-    "Giải bóng đá vô địch quốc gia Đức": "Germany Bundesliga",
-    "Giải Bóng đá Vô địch Quốc gia Tây Ban Nha": "Spain LaLiga",
-}
+LEAGUE_MAP_ENV_VAR = "LEAGUE_MAP_JSON"
+
+
+def load_league_map() -> dict:
+    raw = os.environ.get(LEAGUE_MAP_ENV_VAR, "")
+    if not raw.strip():
+        print(f"[warn] {LEAGUE_MAP_ENV_VAR} is empty/unset — league names "
+              f"will be left untranslated.", file=sys.stderr)
+        return {}
+    try:
+        parsed = json.loads(raw)
+        if not isinstance(parsed, dict):
+            raise ValueError("expected a JSON object")
+        return parsed
+    except (json.JSONDecodeError, ValueError) as e:
+        print(f"[warn] Failed to parse {LEAGUE_MAP_ENV_VAR} as a JSON object "
+              f"({e}) — league names will be left untranslated.", file=sys.stderr)
+        return {}
+
+
+LEAGUE_MAP = load_league_map()
 
 # Populated during parsing with any raw league name not found in LEAGUE_MAP,
 # so we can report just the new ones that still need a translation.
