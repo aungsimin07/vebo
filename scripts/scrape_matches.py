@@ -164,7 +164,6 @@ def parse_match_card(card) -> dict:
 
     time_node = card.select_one(".match-time")
     score_node = card.select_one(".match-card__score")
-    commentator_node = card.select_one(".match-card__stats-content a")
     link_node = card.select_one("a.link-match")
 
     teams = card.select(".match-card__teams .team")
@@ -176,23 +175,25 @@ def parse_match_card(card) -> dict:
     kickoff = parse_kickoff_timestamp(time_text, card.get("data-date"))
 
     return {
-        "id": card.get("data-id"),
         "sport": card.get("data-sport"),
         "league": league,
-        "status": status,
+        "status": status.lower() if status else None,
         "kickoff_time": kickoff,
         "home_team": home_team,
         "away_team": away_team,
         "score": score,
-        "commentator": text_or_none(commentator_node),
         "url": link_node.get("href") if link_node else None,
     }
 
 
 def parse_matches(html: str) -> list[dict]:
     soup = BeautifulSoup(html, "html.parser")
-    cards = soup.select(".match-card")
-    return [parse_match_card(card) for card in cards]
+    # Only football matches — other sports (and their leagues) are ignored
+    # entirely, so league mapping/unmapped-league tracking never sees them.
+    cards = soup.select('.match-card[data-sport="football"]')
+    matches = [parse_match_card(card) for card in cards]
+    matches.sort(key=lambda m: (m["kickoff_time"] is None, m["kickoff_time"]))
+    return matches
 
 
 if __name__ == "__main__":
