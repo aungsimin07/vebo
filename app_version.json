@@ -1,0 +1,17 @@
+{
+  "latestVersionCode": 1,
+  "latestVersionName": "1.0",
+  "minSupportedVersionCode": 1,
+  "forceUpdate": false,
+  "updateUrl": "",
+  "releaseNotes": {
+    "en": "English Contents",
+    "my": "မြန်မာလို"
+  },
+  "maintenance": {
+    "isUnderMaintenance": false,
+    "sync_by": "scrape_matches.py",
+    "last_sync_at": "2026-09-19T19:01:08.655815+00:00"
+  },
+  "metadata": {}
+}
