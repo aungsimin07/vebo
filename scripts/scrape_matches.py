@@ -12,7 +12,10 @@ In GitHub Actions, TARGET_URL and OUTPUT_PATH are passed via env vars
 
 import json
 import os
+import re
 import sys
+from datetime import datetime
+from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
@@ -22,6 +25,7 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
 )
 TARGET_SELECTOR = "#match-list"
+LOCAL_TZ = ZoneInfo("Asia/Yangon")
 
 STATUS_MAP = {
     "ĐANG TRỰC TIẾP": "Live",
@@ -50,6 +54,7 @@ def fetch_html(url: str) -> str:
         context = browser.new_context(
             user_agent=USER_AGENT,
             viewport={"width": 412, "height": 915},
+            timezone_id="Asia/Yangon",
         )
         page = context.new_page()
 
@@ -74,6 +79,32 @@ def fetch_html(url: str) -> str:
         if html is None:
             raise SystemExit(f"Selector '{TARGET_SELECTOR}' not found on page.")
         return html
+
+
+def parse_kickoff_timestamp(time_text: str | None, date_attr: str | None) -> str | None:
+    """
+    Combine the rendered time text (e.g. "18:00 - 29/08", already in
+    Asia/Yangon local time because the browser context is pinned to that
+    timezone) with the year from data-date (e.g. "2026-08-29") into a
+    full ISO-8601 timestamp with offset, e.g. "2026-08-29T18:00:00+06:30".
+    """
+    if not time_text:
+        return None
+
+    match = re.match(r"(\d{1,2}):(\d{2})\s*-\s*(\d{1,2})/(\d{1,2})", time_text)
+    if not match:
+        return None
+    hour, minute, day, month = (int(g) for g in match.groups())
+
+    year = datetime.now(LOCAL_TZ).year
+    if date_attr:
+        try:
+            year = int(date_attr.split("-")[0])
+        except (ValueError, IndexError):
+            pass
+
+    dt = datetime(year, month, day, hour, minute, tzinfo=LOCAL_TZ)
+    return dt.isoformat()
 
 
 def text_or_none(node) -> str | None:
@@ -110,14 +141,15 @@ def parse_match_card(card) -> dict:
     away_team = parse_team(teams[1]) if len(teams) > 1 else None
 
     score = text_or_none(score_node)
+    time_text = text_or_none(time_node)
+    kickoff = parse_kickoff_timestamp(time_text, card.get("data-date"))
 
     return {
         "id": card.get("data-id"),
         "sport": card.get("data-sport"),
-        "date": card.get("data-date"),
         "league": text_or_none(league_node),
         "status": status,
-        "time": text_or_none(time_node),
+        "kickoff_time": kickoff,
         "home_team": home_team,
         "away_team": away_team,
         "score": score,
@@ -146,3 +178,7 @@ if __name__ == "__main__":
         f.write("\n")
 
     print(f"[info] Wrote {len(matches)} match(es) to {output_path}", file=sys.stderr)
+
+    leagues = sorted({m["league"] for m in matches if m.get("league")})
+    print(f"[info] Unique leagues found ({len(leagues)}):", file=sys.stderr)
+    print(json.dumps(leagues, ensure_ascii=False, indent=2), file=sys.stderr)
