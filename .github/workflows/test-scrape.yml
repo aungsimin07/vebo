@@ -1,0 +1,33 @@
+name: Test Scrape
+
+on:
+  workflow_dispatch:
+    inputs:
+      targetUrl:
+        description: "URL to scrape"
+        required: true
+        type: string
+
+jobs:
+  test-scrape:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Browsers
+        run: playwright install --with-deps chromium
+
+      - name: Run Scrape Script
+        env:
+          TARGET_URL: ${{ github.event.inputs.targetUrl }}
+        run: python scripts/scrape_matches.py
+
