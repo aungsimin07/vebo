@@ -1,0 +1,20 @@
+{
+  "latestVersionCode": 1,
+  "latestVersionName": "1.0",
+  "minSupportedVersionCode": 1,
+  "forceUpdate": false,
+  "updateUrl": "",
+  "releaseNotes": {
+    "en": "English Contents",
+    "my": "မြန်မာလို"
+  },
+  "maintenance": {
+    "isUnderMaintenance": true,
+    "sync_by": "scrape_matches.py",
+    "last_sync_at": "2026-11-28T12:33:43.153251+00:00"
+  },
+  "metadata": {
+    "socoImageCdn": "https://img.cltvap.cc/football/team/",
+    "allowPlayerBeforeKickoff": false
+  }
+}
