@@ -32,6 +32,21 @@ STATUS_MAP = {
     "CHƯA BẮT ĐẦU": "Upcoming",
 }
 
+LEAGUE_MAP = {
+    "AFC Giải vô địch Champions 2": "AFC Champions League Two",
+    "Cúp Bóng đá Châu Á U20": "AFC U20 Asian Cup",
+    "Giải bóng đá Serie A Italia": "Italy Serie A",
+    "Giải bóng đá Ngoại hạng Anh": "England Premier League",
+    "Giải bóng đá Hạng hai Đức": "Germany Bundesliga 2",
+    "Giải Vô địch quốc gia Ả-rập Xê-út": "Saudi Pro League",
+    "Giải bóng đá vô địch quốc gia Đức": "Germany Bundesliga",
+    "Giải Bóng đá Vô địch Quốc gia Tây Ban Nha": "Spain LaLiga",
+}
+
+# Populated during parsing with any raw league name not found in LEAGUE_MAP,
+# so we can report just the new ones that still need a translation.
+unmapped_leagues: set[str] = set()
+
 
 def get_target_url() -> str:
     if len(sys.argv) > 1:
@@ -131,6 +146,11 @@ def parse_match_card(card) -> dict:
     status = STATUS_MAP.get(status_raw, status_raw)
 
     league_node = card.select_one(".match-card__league span")
+    league_raw = text_or_none(league_node)
+    if league_raw and league_raw not in LEAGUE_MAP:
+        unmapped_leagues.add(league_raw)
+    league = LEAGUE_MAP.get(league_raw, league_raw) if league_raw else None
+
     time_node = card.select_one(".match-time")
     score_node = card.select_one(".match-card__score")
     commentator_node = card.select_one(".match-card__stats-content a")
@@ -147,7 +167,7 @@ def parse_match_card(card) -> dict:
     return {
         "id": card.get("data-id"),
         "sport": card.get("data-sport"),
-        "league": text_or_none(league_node),
+        "league": league,
         "status": status,
         "kickoff_time": kickoff,
         "home_team": home_team,
@@ -179,6 +199,11 @@ if __name__ == "__main__":
 
     print(f"[info] Wrote {len(matches)} match(es) to {output_path}", file=sys.stderr)
 
-    leagues = sorted({m["league"] for m in matches if m.get("league")})
-    print(f"[info] Unique leagues found ({len(leagues)}):", file=sys.stderr)
-    print(json.dumps(leagues, ensure_ascii=False, indent=2), file=sys.stderr)
+    if unmapped_leagues:
+        print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
+              f"add these to LEAGUE_MAP:", file=sys.stderr)
+        print(json.dumps(sorted(unmapped_leagues), ensure_ascii=False, indent=2),
+              file=sys.stderr)
+    else:
+        print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP.",
+              file=sys.stderr)
