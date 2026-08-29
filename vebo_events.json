@@ -1,0 +1,760 @@
+{
+  "leagues": [
+    {
+      "strLeague": "ASEAN Cup",
+      "events": [
+        {
+          "strTimestamp": "2026-10-05T15:30:00+06:30",
+          "strHomeTeam": "Malaysia",
+          "strHomeTeamBadge": "9e5b39abe0157cedd650c0d0c5cbd767.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Việt Nam",
+          "strAwayTeamBadge": "14b75c2d38d88b747c19de8ea5509d16.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/malaysia-vs-dtqg-viet-nam-luc-1600-ngay-05-10-2026-edq09i2xldpheqx"
+        },
+        {
+          "strTimestamp": "2026-10-05T19:30:00+06:30",
+          "strHomeTeam": "Indonesia",
+          "strHomeTeamBadge": "628f16b29939d1b060af49f66ae0f7f8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Thái Lan",
+          "strAwayTeamBadge": "43b2dd1c93748297cfbbea4d31247641.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/indonesia-vs-thai-lan-luc-2000-ngay-05-10-2026-34kgmigvo1nueko"
+        }
+      ]
+    },
+    {
+      "strLeague": "Euro U21",
+      "events": [
+        {
+          "strTimestamp": "2026-10-05T23:00:00+06:30",
+          "strHomeTeam": "Thụy Điển U21",
+          "strHomeTeamBadge": "ab52d4dc33c41d54daf420eb25b404cf.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bắc Macedonia U21",
+          "strAwayTeamBadge": "f06adf060c098f11e76fa2ff1565ba70.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/thuy-dien-u21-vs-bac-macedonia-u21-luc-2330-ngay-05-10-2026-wv78xivpgr6fokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giao hữu các CLB quốc tế",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T20:00:00+06:30",
+          "strHomeTeam": "Hamburger SV",
+          "strHomeTeamBadge": "81f8f9e258e6b73bc522bab06730720a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Copenhagen",
+          "strAwayTeamBadge": "629b6f983d0ca3c33f2c4b50b3449314.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/hamburger-sv-vs-fc-copenhagen-luc-2030-ngay-04-10-2026-wv78xi12xl6bokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Hạng nhì Tây Ban Nha",
+      "events": [
+        {
+          "strTimestamp": "2026-10-03T20:45:00+06:30",
+          "strHomeTeam": "CLB Almeria",
+          "strHomeTeamBadge": "d019943fa39f97f70cf49601cccbfa4b.png!w80",
+          "intHomeScore": 2,
+          "strAwayTeam": "Burgos CF",
+          "strAwayTeamBadge": "1e888ca542d892600d3b2818d1c40e22.png!w80",
+          "intAwayScore": 1,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/clb-almeria-vs-burgos-cf-luc-2115-ngay-03-10-2026-jr7owip4mngfgq0"
+        },
+        {
+          "strTimestamp": "2026-10-04T18:30:00+06:30",
+          "strHomeTeam": "R Sociedad B",
+          "strHomeTeamBadge": "d29164c8a90c597e5333f1bf14f289f2.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ bóng đá Granada",
+          "strAwayTeamBadge": "f8ac17559f204d139563929dc7eeedeb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/r-sociedad-b-vs-cau-lac-bo-bong-da-granada-luc-1900-ngay-04-10-2026-69759ig406vbgk2"
+        },
+        {
+          "strTimestamp": "2026-10-04T20:45:00+06:30",
+          "strHomeTeam": "Sporting Gijon",
+          "strHomeTeamBadge": "fc749b5065db363497b7d93c966b0a51.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Celta Vigo B",
+          "strAwayTeamBadge": "3090d2868936f0f73f36844a43d5ce8f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/sporting-gijon-vs-celta-vigo-b-luc-2115-ngay-04-10-2026-8lk2dirlyn1uz73"
+        },
+        {
+          "strTimestamp": "2026-10-04T23:00:00+06:30",
+          "strHomeTeam": "CLB Las Palmas",
+          "strHomeTeamBadge": "eff9bb17ae54a84068dfc3b9f1f628cb.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Real Valladolid",
+          "strAwayTeamBadge": "fdf63461c00668597319a4f0db14dcee.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/clb-las-palmas-vs-real-valladolid-luc-2330-ngay-04-10-2026-34kgmio6wdyheko"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:30:00+06:30",
+          "strHomeTeam": "CLB Girona",
+          "strHomeTeamBadge": "006ce259b33ef72dd5570cfa8dc39f38.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "RCD Mallorca",
+          "strAwayTeamBadge": "fdef90456d2a2eee09976c558457aec7.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/clb-girona-vs-rcd-mallorca-luc-0200-ngay-05-10-2026-edq09ilznymaeqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Hạng nhất Brasil",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T04:00:00+06:30",
+          "strHomeTeam": "CLB Atletico Mineiro",
+          "strHomeTeamBadge": "079e86cebd6511ce807cc6073a3e26ee.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bragantino",
+          "strAwayTeamBadge": "9e9d18ccd36d42462fc896e22de890c2.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/clb-atletico-mineiro-vs-bragantino-luc-0430-ngay-04-10-2026-m2q15izr2g9te76"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Liga 2 Indonesia",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T15:00:00+06:30",
+          "strHomeTeam": "Barito Putera",
+          "strHomeTeamBadge": "631d7950b866054f174c8d7389418f3b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Persela Lamongan",
+          "strAwayTeamBadge": "e25b3c116f921e16474813c883d84b79.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/barito-putera-vs-persela-lamongan-luc-1530-ngay-04-10-2026-527r3i48xxwh47e"
+        },
+        {
+          "strTimestamp": "2026-10-04T18:30:00+06:30",
+          "strHomeTeam": "Semen Padang",
+          "strHomeTeamBadge": "84cbbc8bc40a15d27aafc116d775cd27.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "PSPS Riau",
+          "strAwayTeamBadge": "54150eb8241c11d0679cdd0069e13e4f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/semen-padang-vs-psps-riau-luc-1900-ngay-04-10-2026-jek33i8lr8wc9ko"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá hạng nhì Nhật Bản",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T10:30:00+06:30",
+          "strHomeTeam": "Vanraure",
+          "strHomeTeamBadge": "3b0ad7d22d856a34a523cf4cecde0789.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Yokohama FC",
+          "strAwayTeamBadge": "97316a8300d28bfd97a6da0aff5dc0ea.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/vanraure-vs-yokohama-fc-luc-1100-ngay-04-10-2026-oj7x9ixjxwlt47g"
+        },
+        {
+          "strTimestamp": "2026-10-04T12:30:00+06:30",
+          "strHomeTeam": "Vegalta Sendai",
+          "strHomeTeamBadge": "514eb329116806ef998ead8b3ccb5612.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Jubilo Iwata",
+          "strAwayTeamBadge": "771a47aa3a754d19f9f298fdf828e23b.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/vegalta-sendai-vs-jubilo-iwata-luc-1300-ngay-04-10-2026-63kv9igegzmix7e"
+        },
+        {
+          "strTimestamp": "2026-10-04T16:30:00+06:30",
+          "strHomeTeam": "Tegevajaro Miyazaki",
+          "strHomeTeamBadge": "d212b444eb151871d8fbbcafa8e36658.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Omiya Ardija",
+          "strAwayTeamBadge": "f3b0743cbe39963a20d4ffe3a8c64c2e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/tegevajaro-miyazaki-vs-clb-omiya-ardija-luc-1700-ngay-04-10-2026-ezk96i3r30mi1kn"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải hạng Ba Thụy Điển",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T21:30:00+06:30",
+          "strHomeTeam": "Umea",
+          "strHomeTeamBadge": "149815eb972b3c370dee3b89d645ae14.jpg!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hammarby TFF",
+          "strAwayTeamBadge": "8ff59b3d46d49af66b8e61fe7ea32ef0.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/umea-vs-hammarby-tff-luc-2200-ngay-04-10-2026-8lk2dir6l18cz73"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải hạng Hai Bồ Đào Nha",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T16:30:00+06:30",
+          "strHomeTeam": "SC Farense",
+          "strHomeTeamBadge": "98c2ee8cb3277cf417eeab8c4ee0b936.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chaves",
+          "strAwayTeamBadge": "8d44ba3c0bbe2a8f6535aa75e9867b38.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/sc-farense-vs-chaves-luc-1700-ngay-04-10-2026-ndqmliw6ondcrkv"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải hạng hai Hà Lan",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T19:00:00+06:30",
+          "strHomeTeam": "Venlo",
+          "strHomeTeamBadge": "dd2daa269f98540286b5dfa81b17d0e8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Roda",
+          "strAwayTeamBadge": "5b845b04c30db14bb40e1ec2efe70590.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/venlo-vs-clb-roda-luc-1930-ngay-04-10-2026-l6kegi8ngw0av75"
+        }
+      ]
+    },
+    {
+      "strLeague": "Liên minh bóng đá quốc gia châu Mỹ",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T08:30:00+06:30",
+          "strHomeTeam": "Belize",
+          "strHomeTeamBadge": "cc43cae8b2c9735749cb067be62f9311.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "French Guiana",
+          "strAwayTeamBadge": "54803d9a444e58a28e10b6563e60fec8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/belize-vs-french-guiana-luc-0900-ngay-04-10-2026-xvkjoi86wmrc879"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:30:00+06:30",
+          "strHomeTeam": "Guyana",
+          "strHomeTeamBadge": "d5a92a68f9af953b26eafb935a054ce7.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Dominica",
+          "strAwayTeamBadge": "52e9caed9827b4c611bd6cc7a96ed455.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/guyana-vs-dominica-luc-0200-ngay-05-10-2026-vrqwni4wd1ja4qn"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:30:00+06:30",
+          "strHomeTeam": "Quần đảo Turks & Caicos",
+          "strHomeTeamBadge": "1415dc375c993c821db970fdf320c0e8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Quần đảo Virgin Anh",
+          "strAwayTeamBadge": "35ce49daeea2bdae89607a6c0a8e8527.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/quan-dao-turks-caicos-vs-quan-dao-virgin-anh-luc-0200-ngay-05-10-2026-jek33i8l4jnf9ko"
+        },
+        {
+          "strTimestamp": "2026-10-05T02:30:00+06:30",
+          "strHomeTeam": "Bahamas",
+          "strHomeTeamBadge": "33f4365d46e7dad72e198ab5326ba525.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Quần đảo Virgin Mỹ",
+          "strAwayTeamBadge": "7de64628d6c08c86d7a1b4a1027b97b8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/bahamas-vs-quan-dao-virgin-my-luc-0300-ngay-05-10-2026-9gklzi1gx39um7x"
+        },
+        {
+          "strTimestamp": "2026-10-05T04:30:00+06:30",
+          "strHomeTeam": "Puerto Rico",
+          "strHomeTeamBadge": "80ce4326387c091af8b8647f3292c818.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Quần đảo Cayman",
+          "strAwayTeamBadge": "f6bbfd2ff6735cc0c673ddf4e39aa3dd.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/puerto-rico-vs-quan-dao-cayman-luc-0500-ngay-05-10-2026-m2q15izoyg2fe76"
+        },
+        {
+          "strTimestamp": "2026-10-05T04:30:00+06:30",
+          "strHomeTeam": "Trinidad & Tobago",
+          "strHomeTeamBadge": "edb8dfb5b878d0e33c4a86488ad8eb6a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Curacao",
+          "strAwayTeamBadge": "31fd3b7fb312954c8a781d31f83166b7.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/trinidad-tobago-vs-curacao-luc-0500-ngay-05-10-2026-g6763i5gzwxuo7r"
+        },
+        {
+          "strTimestamp": "2026-10-05T05:30:00+06:30",
+          "strHomeTeam": "Aruba",
+          "strHomeTeamBadge": "cff843c1f724a378bd0ae42d842ef807.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Anguilla",
+          "strAwayTeamBadge": "b87a20a2b24f9944084890d1a136a22f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/aruba-vs-anguilla-luc-0600-ngay-05-10-2026-zrkn6i4jymlcwql"
+        },
+        {
+          "strTimestamp": "2026-10-05T06:30:00+06:30",
+          "strHomeTeam": "Costa Rica",
+          "strHomeTeamBadge": "2d7f3f6e23f7cb31f2209ab8cc8f47a4.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Haiti",
+          "strAwayTeamBadge": "d55980e43b8a49a3ac62d7a899334f11.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/costa-rica-vs-haiti-luc-0700-ngay-05-10-2026-o17pjio5wp1iy7j"
+        },
+        {
+          "strTimestamp": "2026-10-05T08:30:00+06:30",
+          "strHomeTeam": "Nicaragua",
+          "strHomeTeamBadge": "b6d69c1c07b1d8d83b953b28563999ae.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Cộng hòa Dominican",
+          "strAwayTeamBadge": "c3209b7fb56b7bc4fa2619f1248cb561.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/nicaragua-vs-cong-hoa-dominican-luc-0900-ngay-05-10-2026-vrqwni4wdnjt4qn"
+        }
+      ]
+    },
+    {
+      "strLeague": "ကိုလံဘီယာ - Primera A",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T01:30:00+06:30",
+          "strHomeTeam": "CLB Aguilas Doradas",
+          "strHomeTeamBadge": "3190d6d022fe9b36c65d83cf98e16d15.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Jaguares de Cordoba",
+          "strAwayTeamBadge": "b7f3a068b301edd82ad4c56496f41063.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/clb-aguilas-doradas-vs-jaguares-de-cordoba-luc-0200-ngay-04-10-2026-527r3i4zndvb47e"
+        },
+        {
+          "strTimestamp": "2026-10-05T07:45:00+06:30",
+          "strHomeTeam": "Llaneros FC",
+          "strHomeTeamBadge": "f83a93401d7a60595338bae0337d344c.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB America de Cali",
+          "strAwayTeamBadge": "ed6ae7fa894cb5bdbccfd605d1d6ad04.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/llaneros-fc-vs-clb-america-de-cali-luc-0815-ngay-05-10-2026-o07dni5zwrmhmkn"
+        }
+      ]
+    },
+    {
+      "strLeague": "နိုင်ငံတကာ - Arabian Gulf Cup",
+      "events": [
+        {
+          "strTimestamp": "2026-10-03T22:25:00+06:30",
+          "strHomeTeam": "Ả Rập Saudi",
+          "strHomeTeamBadge": "cf372cbe6eae54c6a6dfb3ebbcdc3404.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Qatar",
+          "strAwayTeamBadge": "7303a103c93fea0445384d6ff3f3d1b9.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/a-rap-saudi-vs-qatar-luc-2255-ngay-03-10-2026-jr7owip5150bgq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "နိုင်ငံတကာ - ခြေစမ်းပွဲ",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T00:30:00+06:30",
+          "strHomeTeam": "Canada",
+          "strHomeTeamBadge": "7e19999864bb17b5cf10e68e3c7e6276.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Peru",
+          "strAwayTeamBadge": "77da2f07ed6c94afa27b5f113bea7ebe.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/canada-vs-peru-luc-0100-ngay-04-10-2026-jek33imx1jjh9ko"
+        },
+        {
+          "strTimestamp": "2026-10-04T01:30:00+06:30",
+          "strHomeTeam": "Bờ Biển Ngà",
+          "strHomeTeamBadge": "4ceefb51ae9ec399a69540c895f4519f.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Cameroon",
+          "strAwayTeamBadge": "e2ce14e81dba66dbff9cbc35ecfdb704.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/bo-bien-nga-vs-cameroon-luc-0200-ngay-04-10-2026-o07dninyg62cmkn"
+        },
+        {
+          "strTimestamp": "2026-10-04T06:30:00+06:30",
+          "strHomeTeam": "Argentina",
+          "strHomeTeamBadge": "7d44a77ef7bf7d809287828b992f3007.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Burkina Faso",
+          "strAwayTeamBadge": "2e667fca5e24ac13dcee94ddc4aa751a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/argentina-vs-burkina-faso-luc-0700-ngay-04-10-2026-vrqwni01z8vt4qn"
+        },
+        {
+          "strTimestamp": "2026-10-04T08:30:00+06:30",
+          "strHomeTeam": "Mỹ",
+          "strHomeTeamBadge": "08e9fb9c257f63bc57837b42b31f8cef.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Mexico",
+          "strAwayTeamBadge": "3653cce234494bfbd33e077f4a028f66.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/my-vs-mexico-luc-0900-ngay-04-10-2026-ndqmli94gz0trkv"
+        },
+        {
+          "strTimestamp": "2026-10-05T00:30:00+06:30",
+          "strHomeTeam": "Ai Cập",
+          "strHomeTeamBadge": "65a579da11fa712149bca347ecfcb208.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Nam Phi",
+          "strAwayTeamBadge": "a30bc83d95b629973ef10dbe8221ca63.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/ai-cap-vs-nam-phi-luc-0100-ngay-05-10-2026-l6kegir93x3bv75"
+        },
+        {
+          "strTimestamp": "2026-10-05T17:30:00+06:30",
+          "strHomeTeam": "Anh U19",
+          "strHomeTeamBadge": "ba472bb6eb37e333549df040175df856.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bỉ U19",
+          "strAwayTeamBadge": "f40723ed94042ea9ea36bfb5ad4157b2.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/anh-u19-vs-bi-u19-luc-1800-ngay-05-10-2026-oj7x9im1dwxa47g"
+        },
+        {
+          "strTimestamp": "2026-10-05T19:30:00+06:30",
+          "strHomeTeam": "Uganda",
+          "strHomeTeamBadge": "81f7acabd411274fcf65ce2070ed568a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "D.R. Congo",
+          "strAwayTeamBadge": "49d342a8f5ce9acffb799b04c0ca43aa.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/uganda-vs-dr-congo-luc-2000-ngay-05-10-2026-vmqy9iyez0ybgk9"
+        },
+        {
+          "strTimestamp": "2026-10-05T20:00:00+06:30",
+          "strHomeTeam": "Ukraine U21",
+          "strHomeTeamBadge": "5de6f7a36339ef5bedc3dc8741a1e222.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Albania U21",
+          "strAwayTeamBadge": "944fe43eecfa1c14e740413ea6229c2d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/ukraine-u21-vs-albania-u21-luc-2030-ngay-05-10-2026-o17pji46nrlhy7j"
+        },
+        {
+          "strTimestamp": "2026-10-05T21:30:00+06:30",
+          "strHomeTeam": "Mauritius",
+          "strHomeTeamBadge": "2fbdd77210d6beb40c3bd1bd026f63ed.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Sri Lanka",
+          "strAwayTeamBadge": "4643dd49216b67d9c617ceb260e45684.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/mauritius-vs-sri-lanka-luc-2200-ngay-05-10-2026-jr7owiyxmlwigq0"
+        },
+        {
+          "strTimestamp": "2026-10-05T22:30:00+06:30",
+          "strHomeTeam": "Serbia U21",
+          "strHomeTeamBadge": "059bbd8df7767d3bc7829e3735c221e2.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG U21 Nga",
+          "strAwayTeamBadge": "ca3445d71de0ef386033037868c58d92.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/serbia-u21-vs-dtqg-u21-nga-luc-2300-ngay-05-10-2026-9gklzi5lpyesm7x"
+        }
+      ]
+    },
+    {
+      "strLeague": "ယူအက်စ်အေ - USL League Two",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T06:00:00+06:30",
+          "strHomeTeam": "Tampa Bay",
+          "strHomeTeamBadge": "969d795fc7010b8500619a8f8a44d5c8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Miami FC",
+          "strAwayTeamBadge": "10e3c287008eed128a8c53f8f55c26bd.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/tampa-bay-vs-miami-fc-luc-0630-ngay-04-10-2026-34kgmio1gndaeko"
+        }
+      ]
+    },
+    {
+      "strLeague": "အာဂျင်တီးနား - Liga Profesional de Fútbol",
+      "events": [
+        {
+          "strTimestamp": "2026-10-04T02:30:00+06:30",
+          "strHomeTeam": "Atl. Tucuman",
+          "strHomeTeamBadge": "2d87cf3b426597f02435e2c72e8def93.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Barracas Central",
+          "strAwayTeamBadge": "b8ff3b78b8ff52dbca3b7eb27fb1c1fb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/atl-tucuman-vs-barracas-central-luc-0300-ngay-04-10-2026-edq09ilenlnteqx"
+        },
+        {
+          "strTimestamp": "2026-10-05T02:30:00+06:30",
+          "strHomeTeam": "Talleres Cordoba",
+          "strHomeTeamBadge": "44cb6b8a76b2194e16849eace4743e54.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Belgrano",
+          "strAwayTeamBadge": "f24c6d2696f439d43875fba52100991d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/talleres-cordoba-vs-belgrano-luc-0300-ngay-05-10-2026-l6kegi8038ocv75"
+        },
+        {
+          "strTimestamp": "2026-10-05T04:45:00+06:30",
+          "strHomeTeam": "Argentinos Jrs",
+          "strHomeTeamBadge": "5d8f8c8c289dbb2d67203988c8275cbc.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Club Atletico Tigre",
+          "strAwayTeamBadge": "95c9ef810563d777a5330b142f9ba38b.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/argentinos-jrs-vs-club-atletico-tigre-luc-0515-ngay-05-10-2026-wv78xivgev5tokr"
+        },
+        {
+          "strTimestamp": "2026-10-05T07:00:00+06:30",
+          "strHomeTeam": "Estudiantes Rio Cuarto",
+          "strHomeTeamBadge": "578175c1a0691907824154179e179ade.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Racing Club",
+          "strAwayTeamBadge": "cb3c7e99e401d3ff83eeb36c53996d79.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/estudiantes-rio-cuarto-vs-racing-club-luc-0730-ngay-05-10-2026-o07dni58g54umkn"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဥရောပ - UEFA Nations League",
+      "events": [
+        {
+          "strTimestamp": "2026-10-03T22:30:00+06:30",
+          "strHomeTeam": "Croatia",
+          "strHomeTeamBadge": "0c383e8deecbd58d5cbdfd324132b91f.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Anh",
+          "strAwayTeamBadge": "ba472bb6eb37e333549df040175df856.png!w80",
+          "intAwayScore": 4,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/croatia-vs-dtqg-anh-luc-2300-ngay-03-10-2026-vrqwni40pjmf4qn?houseId=08552895"
+        },
+        {
+          "strTimestamp": "2026-10-03T22:30:00+06:30",
+          "strHomeTeam": "ĐTQG Iceland",
+          "strHomeTeamBadge": "77772713a7d7e02b10ca9bd90e4f6a31.png!w80",
+          "intHomeScore": 1,
+          "strAwayTeam": "ĐTQG Bulgaria",
+          "strAwayTeamBadge": "3c057cb2b41f22c0e740974d7a428918.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/dtqg-iceland-vs-dtqg-bulgaria-luc-2300-ngay-03-10-2026-ezk96i3j912t1kn?houseId=02456966"
+        },
+        {
+          "strTimestamp": "2026-10-03T22:30:00+06:30",
+          "strHomeTeam": "Estonia",
+          "strHomeTeamBadge": "350035841e1182bf4389c52752d8bd0d.png!w80",
+          "intHomeScore": 1,
+          "strAwayTeam": "Luxembourg",
+          "strAwayTeamBadge": "a878dbebc902328b41dbf02aa87abb58.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/estonia-vs-luxembourg-luc-2300-ngay-03-10-2026-l6kegi8rd5ouv75?houseId=07428422"
+        },
+        {
+          "strTimestamp": "2026-10-03T22:30:00+06:30",
+          "strHomeTeam": "Belarus",
+          "strHomeTeamBadge": "447d5c2ba3e790ec434c0bee994095ed.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB San Marino",
+          "strAwayTeamBadge": "9bdc3efe2bdc1946dbb253b2d101b484.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://grafme.com/truc-tiep/belarus-vs-clb-san-marino-luc-2300-ngay-03-10-2026-g6763i5pj8jio7r"
+        },
+        {
+          "strTimestamp": "2026-10-04T01:15:00+06:30",
+          "strHomeTeam": "Thụy Sĩ",
+          "strHomeTeamBadge": "4402fbc939277321386d11fd427eb2b6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Slovenia",
+          "strAwayTeamBadge": "e4ba31fba036a999321d5460f7f2d1d1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/thuy-si-vs-slovenia-luc-0145-ngay-04-10-2026-j374oi04xmmfgqo"
+        },
+        {
+          "strTimestamp": "2026-10-04T01:15:00+06:30",
+          "strHomeTeam": "Tây Ban Nha",
+          "strHomeTeamBadge": "e5858bd2ddb51631a85b1af22f5a1a6a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Cộng hòa Séc",
+          "strAwayTeamBadge": "9cc25407f209e031babdac7d3c520ccb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/tay-ban-nha-vs-cong-hoa-sec-luc-0145-ngay-04-10-2026-ndqmliw96vnbrkv"
+        },
+        {
+          "strTimestamp": "2026-10-04T01:15:00+06:30",
+          "strHomeTeam": "Đội tuyển QG Bắc Macedonia",
+          "strHomeTeamBadge": "f06adf060c098f11e76fa2ff1565ba70.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Scotland",
+          "strAwayTeamBadge": "c432976945dc8b1ac46792dfa97ea068.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/doi-tuyen-qg-bac-macedonia-vs-dtqg-scotland-luc-0145-ngay-04-10-2026-ndkz6i3244rixq3"
+        },
+        {
+          "strTimestamp": "2026-10-04T19:30:00+06:30",
+          "strHomeTeam": "Azerbaijan",
+          "strHomeTeamBadge": "f653d5976458f0dcce2b3939259acffa.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Lithuania",
+          "strAwayTeamBadge": "f2b6806d6ed60d2d87b0dd5ae62e6f20.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/azerbaijan-vs-dtqg-lithuania-luc-2000-ngay-04-10-2026-527r3i4322mi47e"
+        },
+        {
+          "strTimestamp": "2026-10-04T22:30:00+06:30",
+          "strHomeTeam": "Malta",
+          "strHomeTeamBadge": "f7eb745a5f9b3016b083019da91b5f74.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Andorra",
+          "strAwayTeamBadge": "15fa1fad1fc582dd65403f6f950b1e21.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/malta-vs-andorra-luc-2300-ngay-04-10-2026-edq09il2jj2aeqx"
+        },
+        {
+          "strTimestamp": "2026-10-04T22:30:00+06:30",
+          "strHomeTeam": "ĐTQG Kosovo",
+          "strHomeTeamBadge": "4c93e18166419da61b1ca433c866d9e5.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Áo",
+          "strAwayTeamBadge": "b27c40f1f7fb35fcf65d89dc29748e29.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/dtqg-kosovo-vs-dtqg-ao-luc-2300-ngay-04-10-2026-527r3i4322nc47e"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:15:00+06:30",
+          "strHomeTeam": "ĐTQG Hà Lan",
+          "strHomeTeamBadge": "fb9d433088a21464e7d634c4e190b31a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Serbia",
+          "strAwayTeamBadge": "059bbd8df7767d3bc7829e3735c221e2.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/dtqg-ha-lan-vs-serbia-luc-0145-ngay-05-10-2026-wv78xiv1995cokr"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:15:00+06:30",
+          "strHomeTeam": "CLB Greece",
+          "strHomeTeamBadge": "1da38e9fc1f765ffa964a0ab64c8d8fe.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Đức",
+          "strAwayTeamBadge": "5856c2f4a854359864b18f9aed3f8874.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/clb-greece-vs-duc-luc-0145-ngay-05-10-2026-jr7owipy99mfgq0"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:15:00+06:30",
+          "strHomeTeam": "Bồ Đào Nha",
+          "strHomeTeamBadge": "d92d7ec47187a662aacda2d4b4c7628e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Na Uy",
+          "strAwayTeamBadge": "51934729f32d36841a17e43e9390483a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/bo-dao-nha-vs-na-uy-luc-0145-ngay-05-10-2026-9gklzi1522ram7x"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:15:00+06:30",
+          "strHomeTeam": "Xứ Wales",
+          "strHomeTeamBadge": "588f43d3d2fe15b2dad77de9f2cc5c51.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Đan Mạch",
+          "strAwayTeamBadge": "685d3703a0b1410dc3bf2280eb5a15ec.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/xu-wales-vs-dtqg-dan-mach-luc-0145-ngay-05-10-2026-ndkz6i3244ncxq3"
+        },
+        {
+          "strTimestamp": "2026-10-05T01:15:00+06:30",
+          "strHomeTeam": "Ireland",
+          "strHomeTeamBadge": "c940e50f90b9e73f42045c05d49c6e17.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ĐTQG Israel",
+          "strAwayTeamBadge": "a370afda41a7ae62dcb8d1b721b92bed.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/ireland-vs-dtqg-israel-luc-0145-ngay-05-10-2026-wv78xiv199vsokr"
+        },
+        {
+          "strTimestamp": "2026-10-05T22:30:00+06:30",
+          "strHomeTeam": "Đảo Síp",
+          "strHomeTeamBadge": "2c5a6c94ba9dea2c9a656407e1b9bd8c.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Latvia",
+          "strAwayTeamBadge": "5b52e27a9d5bf294f5b593c4c071500e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://grafme.com/truc-tiep/dao-sip-vs-latvia-luc-2300-ngay-05-10-2026-ndqmliw966rirkv"
+        }
+      ]
+    }
+  ]
+}
