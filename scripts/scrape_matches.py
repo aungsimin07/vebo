@@ -1,16 +1,19 @@
 """
-Simple test: scrape client-side-rendered content and print it.
+Simple test: scrape client-side-rendered content and print it as JSON.
 
 Local usage:
-    pip install playwright
+    pip install playwright beautifulsoup4
     playwright install --with-deps chromium
     python scrape_matches.py https://example.com/
 
 In GitHub Actions, TARGET_URL is passed via env var (see workflow).
 """
 
+import json
 import os
 import sys
+
+from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
 USER_AGENT = (
@@ -18,6 +21,11 @@ USER_AGENT = (
     "(KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
 )
 TARGET_SELECTOR = "#match-list"
+
+STATUS_MAP = {
+    "ĐANG TRỰC TIẾP": "Live",
+    "CHƯA BẮT ĐẦU": "Upcoming",
+}
 
 
 def get_target_url() -> str:
@@ -29,7 +37,7 @@ def get_target_url() -> str:
     return url
 
 
-def scrape(url: str) -> str:
+def fetch_html(url: str) -> str:
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -61,8 +69,65 @@ def scrape(url: str) -> str:
         return html
 
 
+def text_or_none(node) -> str | None:
+    if node is None:
+        return None
+    text = node.get_text(strip=True)
+    return text or None
+
+
+def parse_team(node) -> dict | None:
+    if node is None:
+        return None
+    logo = node.select_one("img.team__logo")
+    name = node.select_one("span.team__name")
+    return {
+        "name": text_or_none(name),
+        "logo": logo.get("src") if logo else None,
+    }
+
+
+def parse_match_card(card) -> dict:
+    status_node = card.select_one(".match-card__status.streaming, .match-card__status")
+    status_raw = text_or_none(status_node)
+    status = STATUS_MAP.get(status_raw, status_raw)
+
+    league_node = card.select_one(".match-card__league span")
+    time_node = card.select_one(".match-time")
+    score_node = card.select_one(".match-card__score")
+    commentator_node = card.select_one(".match-card__stats-content a")
+    link_node = card.select_one("a.link-match")
+
+    teams = card.select(".match-card__teams .team")
+    home_team = parse_team(teams[0]) if len(teams) > 0 else None
+    away_team = parse_team(teams[1]) if len(teams) > 1 else None
+
+    score = text_or_none(score_node)
+
+    return {
+        "id": card.get("data-id"),
+        "sport": card.get("data-sport"),
+        "date": card.get("data-date"),
+        "league": text_or_none(league_node),
+        "status": status,
+        "time": text_or_none(time_node),
+        "home_team": home_team,
+        "away_team": away_team,
+        "score": score,
+        "commentator": text_or_none(commentator_node),
+        "url": link_node.get("href") if link_node else None,
+    }
+
+
+def parse_matches(html: str) -> list[dict]:
+    soup = BeautifulSoup(html, "html.parser")
+    cards = soup.select(".match-card")
+    return [parse_match_card(card) for card in cards]
+
+
 if __name__ == "__main__":
     target_url = get_target_url()
     print(f"[info] Fetching: {target_url}", file=sys.stderr)
-    content = scrape(target_url)
-    print(content)
+    raw_html = fetch_html(target_url)
+    matches = parse_matches(raw_html)
+    print(json.dumps(matches, ensure_ascii=False, indent=2))
