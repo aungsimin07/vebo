@@ -1,0 +1,978 @@
+{
+  "leagues": [
+    {
+      "strLeague": "AFC Giải vô địch Champions Elite",
+      "events": [
+        {
+          "strTimestamp": "2026-10-26T20:15:00+06:30",
+          "strHomeTeam": "Neftchi Fargona",
+          "strHomeTeamBadge": "f414775655a79c5a471b2103a4164df4.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Al-Ittihad FC",
+          "strAwayTeamBadge": "dea986d20115216c05d1a45ba9a6162e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/neftchi-fargona-vs-al-ittihad-fc-luc-2045-ngay-26-10-2026-ndkz6i3eg12cxq3"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Ngoại hạng Nga",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T17:15:00+06:30",
+          "strHomeTeam": "Rostov",
+          "strHomeTeamBadge": "1279b7ad21c72f2ab7bda8b972c2858e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Lokomotiv",
+          "strAwayTeamBadge": "5517b8865aa5280667bd899f6810d466.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/rostov-vs-lokomotiv-luc-1745-ngay-25-10-2026-edq09ilz5j2aeqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Vô địch Quốc gia Bồ Đào Nha",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T21:00:00+06:30",
+          "strHomeTeam": "Estrela",
+          "strHomeTeamBadge": "606eca9e363f1c1e62542f8b23fdc71a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Casa Pia AC",
+          "strAwayTeamBadge": "0ee6b6e8c21275bb7a79e64c4baf90c1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/estrela-vs-casa-pia-ac-luc-2130-ngay-24-10-2026-jr7owip9dnvsgq0"
+        },
+        {
+          "strTimestamp": "2026-10-24T23:30:00+06:30",
+          "strHomeTeam": "Alverca",
+          "strHomeTeamBadge": "ff35a6067c000b629b84e648d8a2d2de.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Arouca",
+          "strAwayTeamBadge": "04de5924a46acce3fb629534c4e039be.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/alverca-vs-arouca-luc-0000-ngay-25-10-2026-vmqy9iv38drtgk9"
+        },
+        {
+          "strTimestamp": "2026-10-25T02:00:00+06:30",
+          "strHomeTeam": "Gil Vicente",
+          "strHomeTeamBadge": "6a2005d20c872db3173d2bf995768055.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Porto",
+          "strAwayTeamBadge": "83aa826e3c45d5047a8c917fb0b41a5e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/gil-vicente-vs-porto-luc-0230-ngay-25-10-2026-9gklzi12o9pam7x"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:00:00+06:30",
+          "strHomeTeam": "CLB Estoril",
+          "strHomeTeamBadge": "faeceacffbf35e28b7e71a5f90b6efdc.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Moreirense",
+          "strAwayTeamBadge": "ee5b1bcc98e7232350988a477974fb26.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-estoril-vs-moreirense-luc-2230-ngay-25-10-2026-o17pjiogp33uy7j"
+        },
+        {
+          "strTimestamp": "2026-10-26T00:30:00+06:30",
+          "strHomeTeam": "Rio Ave",
+          "strHomeTeamBadge": "e83b163c8501f897012bcc29adfae2b9.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Famalicao",
+          "strAwayTeamBadge": "abd59f62f69ef9f59a8121c3baadd882.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/rio-ave-vs-famalicao-luc-0100-ngay-26-10-2026-527r3i42ymwa47e"
+        },
+        {
+          "strTimestamp": "2026-10-26T00:30:00+06:30",
+          "strHomeTeam": "CLB Nacional",
+          "strHomeTeamBadge": "783ce34336f24424a273c5c2403a3cb1.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Braga",
+          "strAwayTeamBadge": "1fe75f826dab40e6e89cbe961c7e9116.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-nacional-vs-braga-luc-0100-ngay-26-10-2026-ndkz6i34ogjcxq3"
+        },
+        {
+          "strTimestamp": "2026-10-26T03:00:00+06:30",
+          "strHomeTeam": "Sporting",
+          "strHomeTeamBadge": "6a5153c73922a32013b9bc6cfbc20b26.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Viseu",
+          "strAwayTeamBadge": "bd659fbcfc82ac233cc8e329f35f2b50.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/sporting-vs-clb-viseu-luc-0330-ngay-26-10-2026-jr7owip9dnpagq0"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Bóng đá Vô địch Quốc gia Hà Lan",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T17:45:00+06:30",
+          "strHomeTeam": "Fortuna Sittard",
+          "strHomeTeamBadge": "622951cb622289cb656f2a1a05edcb13.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Excelsior",
+          "strAwayTeamBadge": "57b4c68789a8bedcb43174f5f4eb164a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/fortuna-sittard-vs-excelsior-luc-1815-ngay-25-10-2026-ndqmliwn5pjhrkv"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:00:00+06:30",
+          "strHomeTeam": "PSV Eindhoven",
+          "strHomeTeamBadge": "cad5af4d1ff0e6f3119af3d273d95d31.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Feyenoord",
+          "strAwayTeamBadge": "44073f2d2c979a9388f98505ac3b754d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/psv-eindhoven-vs-feyenoord-luc-2030-ngay-25-10-2026-g6763i5o02rao7r"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:15:00+06:30",
+          "strHomeTeam": "Sparta Rotterdam",
+          "strHomeTeamBadge": "73a60eae399442123eeb6f90b70cee8e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ AFC Ajax",
+          "strAwayTeamBadge": "187929503752357480bce47813a9741f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/sparta-rotterdam-vs-cau-lac-bo-afc-ajax-luc-2245-ngay-25-10-2026-ezk96i3reypc1kn"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải Vô địch Bóng đá Quốc gia Mexico",
+      "events": [
+        {
+          "strTimestamp": "2026-10-26T09:40:00+06:30",
+          "strHomeTeam": "Club Tijuana",
+          "strHomeTeamBadge": "6090f28bfc40d2169607b23256e5a151.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Santos Laguna",
+          "strAwayTeamBadge": "2552214027525015c3545cff636f5e03.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/club-tijuana-vs-santos-laguna-luc-1010-ngay-26-10-2026-8lk2dirp4owbz73"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Hạng nhất Trung Quốc",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T17:30:00+06:30",
+          "strHomeTeam": "Wuxi Wugou",
+          "strHomeTeamBadge": "509b91468e833ffe3fd9edd04f06ddee.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Tân Châu Huệ Long",
+          "strAwayTeamBadge": "69b0ed18e16d15d6888baad52e6fa88f.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/wuxi-wugou-vs-tan-chau-hue-long-luc-1800-ngay-25-10-2026-ndkz6i33w4xaxq3"
+        },
+        {
+          "strTimestamp": "2026-10-25T18:00:00+06:30",
+          "strHomeTeam": "Quảng Châu E-Power FC",
+          "strHomeTeamBadge": "8c08e09f2c1d5628cf599b883fe999bf.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Suzhou Dongwu",
+          "strAwayTeamBadge": "bb318757b867c541d704d93053aa1bfb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/quang-chau-e-power-fc-vs-suzhou-dongwu-luc-1830-ngay-25-10-2026-8lk2dirr2m6bz73"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Hạng nhất Ả Rập Xê Út",
+      "events": [
+        {
+          "strTimestamp": "2026-10-26T21:30:00+06:30",
+          "strHomeTeam": "Al Bukayriyah",
+          "strHomeTeamBadge": "608b8974ad512df1293585825bef3cee.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hajer",
+          "strAwayTeamBadge": "cd395fd8e7ba7036a13ac241a0e090a5.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/al-bukayriyah-vs-hajer-luc-2200-ngay-26-10-2026-oj7x9ixg5vdf47g"
+        },
+        {
+          "strTimestamp": "2026-10-26T21:30:00+06:30",
+          "strHomeTeam": "Al Anwar SA",
+          "strHomeTeamBadge": "112d2346959358934a9daf50169ba7b4.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Al-Okhdood",
+          "strAwayTeamBadge": "47edbc8776467d4a14314c82b25344ab.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/al-anwar-sa-vs-al-okhdood-luc-2200-ngay-26-10-2026-zrkn6i4yxp0cwql"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải bóng đá Liga 1 Indonesia",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T15:00:00+06:30",
+          "strHomeTeam": "Arema Malang",
+          "strHomeTeamBadge": "55cba4a142146e2cdc317d21eb4daf76.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Dewa United FC",
+          "strAwayTeamBadge": "76db1148a0e8a7c8e98ab05814cab691.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/arema-malang-vs-dewa-united-fc-luc-1530-ngay-25-10-2026-edq09il3jpyheqx"
+        },
+        {
+          "strTimestamp": "2026-10-26T18:30:00+06:30",
+          "strHomeTeam": "Bhayangkara Solo",
+          "strHomeTeamBadge": "837cf9a178940067578b7343018e003a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "PSM Makassar",
+          "strAwayTeamBadge": "0d74d0d263697b29a9ad3bfc78a6cc46.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/bhayangkara-solo-vs-psm-makassar-luc-1900-ngay-26-10-2026-8lk2dir2mo6sz73"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Bulgaria",
+      "events": [
+        {
+          "strTimestamp": "2026-10-26T21:30:00+06:30",
+          "strHomeTeam": "Lokomotiv Plovdiv",
+          "strHomeTeamBadge": "940bb92f83d40985137748d0d3aeb213.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Slavia Sofia",
+          "strAwayTeamBadge": "e087c9b939975c0cb726253fc3c3e418.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/lokomotiv-plovdiv-vs-slavia-sofia-luc-2200-ngay-26-10-2026-l6kegi8n6mmsv75"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Việt Nam",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T17:30:00+06:30",
+          "strHomeTeam": "Trường Tươi Đồng Nai",
+          "strHomeTeamBadge": "a9741c7972e214b1c312092c8b51acd8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Thép Xanh Nam Định",
+          "strAwayTeamBadge": "bc5db4dd418cb566a4475649876b55bb.png!w80",
+          "intAwayScore": 3,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/truong-tuoi-dong-nai-vs-thep-xanh-nam-dinh-luc-1800-ngay-24-10-2026-vrqwni4wz26b4qn"
+        },
+        {
+          "strTimestamp": "2026-10-24T17:30:00+06:30",
+          "strHomeTeam": "Hồng Lĩnh Hà Tĩnh",
+          "strHomeTeamBadge": "83dd94c5ca68e8f9a3980f036afcb511.png!w80",
+          "intHomeScore": 1,
+          "strAwayTeam": "CLB XM Hai Phong",
+          "strAwayTeamBadge": "fed18f35e0d187fb4c812f24a97c3e6a.png!w80",
+          "intAwayScore": 1,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/hong-linh-ha-tinh-vs-clb-xm-hai-phong-luc-1800-ngay-24-10-2026-ndqmliw1gy5frkv"
+        },
+        {
+          "strTimestamp": "2026-10-25T17:30:00+06:30",
+          "strHomeTeam": "SHB Đà Nẵng",
+          "strHomeTeamBadge": "46a4867487152e47c4dc61984d0c58aa.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hà Nội",
+          "strAwayTeamBadge": "7146224d9ef4e5d2eb712b4e71bdfaa4.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/shb-da-nang-vs-ha-noi-luc-1800-ngay-25-10-2026-g6763i5g393to7r"
+        },
+        {
+          "strTimestamp": "2026-10-25T17:30:00+06:30",
+          "strHomeTeam": "Phu Dong Ninh Binh",
+          "strHomeTeamBadge": "5452226660be0829fdb40967dd4b0b77.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Thành phố Hồ Chí Minh",
+          "strAwayTeamBadge": "99dd3ac7267c0e3870d9ad785e6f9661.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/phu-dong-ninh-binh-vs-thanh-pho-ho-chi-minh-luc-1800-ngay-25-10-2026-j374oi0pw6nagqo"
+        }
+      ]
+    },
+    {
+      "strLeague": "Giải vô địch quốc gia Úc",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T08:30:00+06:30",
+          "strHomeTeam": "Wellington Phoenix",
+          "strHomeTeamBadge": "1162efa593827d2a7566b5862dee72e4.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Central Coast",
+          "strAwayTeamBadge": "22bb94f0215d3b8e0aea534b80d60aba.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/wellington-phoenix-vs-clb-central-coast-luc-0900-ngay-25-10-2026-63kv9igpm21ux7e"
+        },
+        {
+          "strTimestamp": "2026-10-25T10:30:00+06:30",
+          "strHomeTeam": "Sydney FC",
+          "strHomeTeamBadge": "c834bd71b717263c6b93a5b5c1bf1ec7.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Adelaide United",
+          "strAwayTeamBadge": "e5f515e5720cd281a1a53ce2950992b1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/sydney-fc-vs-clb-adelaide-united-luc-1100-ngay-25-10-2026-wv78xiv4p80sokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "Hạng Nhất nữ Anh",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "Liverpool Nữ",
+          "strHomeTeamBadge": "f0c5361f16ad5b8bc5d2ba5fd8a96457.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "London City Lionesses Nữ",
+          "strAwayTeamBadge": "110b5fa77f9d385267a1a06b5319791d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/liverpool-nu-vs-london-city-lionesses-nu-luc-2100-ngay-25-10-2026-g6763i5xn5mfo7r"
+        }
+      ]
+    },
+    {
+      "strLeague": "Vô địch bóng đá Ấn Độ",
+      "events": [
+        {
+          "strTimestamp": "2026-10-26T20:30:00+06:30",
+          "strHomeTeam": "Mohun Bagan",
+          "strHomeTeamBadge": "94f4b5c04d9b9d9e41c9d0cdabbb9e21.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chennaiyin",
+          "strAwayTeamBadge": "df0b08035001e18bf074031afaf69d29.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/mohun-bagan-vs-chennaiyin-luc-2100-ngay-26-10-2026-jek33imx06lc9ko"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျပန် - Japanese J1 League",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T11:30:00+06:30",
+          "strHomeTeam": "Nagoya Grampus",
+          "strHomeTeamBadge": "32aa68e1fa3d62dad572d19b21a09353.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Yokohama F. Marinos",
+          "strAwayTeamBadge": "78ddaaa79d9502f5e2df0fbb6261f937.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/nagoya-grampus-vs-yokohama-f-marinos-luc-1200-ngay-25-10-2026-zrkn6i4gvexawql"
+        },
+        {
+          "strTimestamp": "2026-10-25T12:30:00+06:30",
+          "strHomeTeam": "Cerezo Osaka",
+          "strHomeTeamBadge": "ab10ee503e539e55a9a11a9ff202405a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Chiba",
+          "strAwayTeamBadge": "9ce2dfe0c36e6a9774eaecf9731375b6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/cerezo-osaka-vs-chiba-luc-1300-ngay-25-10-2026-9gklzi1e4mysm7x"
+        },
+        {
+          "strTimestamp": "2026-10-25T13:30:00+06:30",
+          "strHomeTeam": "CLB Tokyo",
+          "strHomeTeamBadge": "333df39860930a21cf72b4e9664723ab.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Mito Hollyhock",
+          "strAwayTeamBadge": "9ead844240532c4e12d3eb45d2087924.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-tokyo-vs-mito-hollyhock-luc-1400-ngay-25-10-2026-wv78xivz8mwaokr"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျာမနီ - Bundesliga",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T20:00:00+06:30",
+          "strHomeTeam": "Paderborn",
+          "strHomeTeamBadge": "7c8c3c50966c793eba910e18659759a1.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hamburger SV",
+          "strAwayTeamBadge": "81f8f9e258e6b73bc522bab06730720a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/paderborn-vs-hamburger-sv-luc-2030-ngay-24-10-2026-ezk96i31ezwh1kn"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:00:00+06:30",
+          "strHomeTeam": "RB Leipzig",
+          "strHomeTeamBadge": "26a59fe5653a96ba72f4f1e4e08b6d4b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Elversberg",
+          "strAwayTeamBadge": "20f905fb0975e88482cf157ad9da4874.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/rb-leipzig-vs-clb-elversberg-luc-2030-ngay-24-10-2026-o17pjiod3l2fy7j"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:00:00+06:30",
+          "strHomeTeam": "1. FC Köln",
+          "strHomeTeamBadge": "887b7663a0d47031528921d9972ae3a6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Schalke 04",
+          "strAwayTeamBadge": "4533ab7ef9ad5e53c981f7ea7bea7033.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/1-fc-kln-vs-fc-schalke-04-luc-2030-ngay-24-10-2026-j374oi0m5r0ugqo"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:00:00+06:30",
+          "strHomeTeam": "FC Augsburg",
+          "strHomeTeamBadge": "db4411a3c4ce1d0f092f5b9d1df08664.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "1. FC Union Berlin",
+          "strAwayTeamBadge": "45ab4c846b0d4df5b002c571b16112dc.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/fc-augsburg-vs-1-fc-union-berlin-luc-2030-ngay-24-10-2026-8lk2dirlvwvsz73"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:00:00+06:30",
+          "strHomeTeam": "1. FSV Mainz 05",
+          "strHomeTeamBadge": "903089d338485f6c68fbc5da690a0628.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "SV Werder Bremen",
+          "strAwayTeamBadge": "82e3b03a1df3d7ae3d38e9fdd24fe622.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/1-fsv-mainz-05-vs-sv-werder-bremen-luc-2030-ngay-24-10-2026-o07dni5zo8vamkn"
+        },
+        {
+          "strTimestamp": "2026-10-24T23:00:00+06:30",
+          "strHomeTeam": "Borussia Dortmund",
+          "strHomeTeamBadge": "bbfacbdbe67705172c6414d7e9c21b58.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Eintracht Frankfurt",
+          "strAwayTeamBadge": "fe636189a2f3db78d0554c34f0bdaae6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/borussia-dortmund-vs-eintracht-frankfurt-luc-2330-ngay-24-10-2026-zrkn6i4w2p6iwql"
+        },
+        {
+          "strTimestamp": "2026-10-25T21:00:00+06:30",
+          "strHomeTeam": "TSG 1899 Hoffenheim",
+          "strHomeTeamBadge": "72ab7862a610b350aef7650ec0e06e06.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bayer 04 Leverkusen",
+          "strAwayTeamBadge": "d3205f3ddca07dc01c822ea0de24a0e7.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/tsg-1899-hoffenheim-vs-bayer-04-leverkusen-luc-2130-ngay-25-10-2026-ndkz6i30gvztxq3"
+        },
+        {
+          "strTimestamp": "2026-10-25T23:00:00+06:30",
+          "strHomeTeam": "SC Freiburg",
+          "strHomeTeamBadge": "6508946c9a5fe22a8784b905b25e8c79.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Bayern München",
+          "strAwayTeamBadge": "ef19a84a6745fe57aa786873d2b18e8a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/sc-freiburg-vs-fc-bayern-mnchen-luc-2330-ngay-25-10-2026-34kgmio605xseko"
+        }
+      ]
+    },
+    {
+      "strLeague": "ဂျာမနီ - Bundesliga 2",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T17:30:00+06:30",
+          "strHomeTeam": "Heidenheimer",
+          "strHomeTeamBadge": "65ee743f20fa7db286fdeda4d33c6980.png!w80",
+          "intHomeScore": 1,
+          "strAwayTeam": "Energie Cottbus",
+          "strAwayTeamBadge": "3623712f3a18880ded3e0a4034b31525.png!w80",
+          "intAwayScore": 1,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/heidenheimer-vs-energie-cottbus-luc-1800-ngay-24-10-2026-vrqwni4jl1ya4qn"
+        },
+        {
+          "strTimestamp": "2026-10-25T19:00:00+06:30",
+          "strHomeTeam": "Braunschweig",
+          "strHomeTeamBadge": "0a38b45c20a019398526a4944553f8e6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Hannover 96",
+          "strAwayTeamBadge": "1800be60204966114d63970b5d0873da.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/braunschweig-vs-hannover-96-luc-1930-ngay-25-10-2026-g6763i58yvnco7r"
+        }
+      ]
+    },
+    {
+      "strLeague": "စပိန် - LaLiga",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T18:30:00+06:30",
+          "strHomeTeam": "Rayo Vallecano",
+          "strHomeTeamBadge": "5005d8feab109ce64e40beb98073cc1f.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Elche",
+          "strAwayTeamBadge": "e5ecd0553885f1a3af731758dddce2ec.png!w80",
+          "intAwayScore": 1,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/rayo-vallecano-vs-elche-luc-1900-ngay-24-10-2026-9gklzi1dvo3am7x"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:45:00+06:30",
+          "strHomeTeam": "CLB Racing Santander",
+          "strHomeTeamBadge": "8db7260a18b1be68e8710cfdbf6be3df.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Espanyol",
+          "strAwayTeamBadge": "214049d4df11756a2eb21bbd8266e2a1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-racing-santander-vs-clb-espanyol-luc-2115-ngay-24-10-2026-jr7owip42dlugq0"
+        },
+        {
+          "strTimestamp": "2026-10-24T23:00:00+06:30",
+          "strHomeTeam": "Valencia CF",
+          "strHomeTeamBadge": "3b54543c1a584e2e9948d655142996d3.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Villarreal",
+          "strAwayTeamBadge": "aee62af96a956756cc29fe4831286357.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/valencia-cf-vs-villarreal-luc-2330-ngay-24-10-2026-34kgmio6mpdceko"
+        },
+        {
+          "strTimestamp": "2026-10-25T01:30:00+06:30",
+          "strHomeTeam": "Atlético Madrid",
+          "strHomeTeamBadge": "390977b0421bce136c562057ea171ecf.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Dep. La Coruna",
+          "strAwayTeamBadge": "e28443c9a1a5b87394ed79c3690ebbd7.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/atletico-madrid-vs-dep-la-coruna-luc-0200-ngay-25-10-2026-m2q15iz39gvce76"
+        },
+        {
+          "strTimestamp": "2026-10-25T19:30:00+06:30",
+          "strHomeTeam": "Athletic Bilbao",
+          "strHomeTeamBadge": "abbb31d42c55612737713aac6567a226.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Getafe CF",
+          "strAwayTeamBadge": "36bf5bf0c8fdf08c1270124808f060e1.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/athletic-bilbao-vs-getafe-cf-luc-2000-ngay-25-10-2026-xvkjoi8pdowb879"
+        },
+        {
+          "strTimestamp": "2026-10-25T21:45:00+06:30",
+          "strHomeTeam": "Celta Vigo",
+          "strHomeTeamBadge": "fd954d083ee85a6f1a3f2471dc756242.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Real Betis Balompié",
+          "strAwayTeamBadge": "018e260ad68bdad741c61e3171c4c608.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/celta-vigo-vs-real-betis-balompie-luc-2215-ngay-25-10-2026-oj7x9ixly6os47g"
+        },
+        {
+          "strTimestamp": "2026-10-26T00:00:00+06:30",
+          "strHomeTeam": "Real Sociedad",
+          "strHomeTeamBadge": "579db6e95905545973035e6eab8df2cd.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Levante",
+          "strAwayTeamBadge": "13e2038bd23a38ce32a3eb259c8bf7d8.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/real-sociedad-vs-clb-levante-luc-0030-ngay-26-10-2026-527r3i4zpyjf47e"
+        },
+        {
+          "strTimestamp": "2026-10-26T02:30:00+06:30",
+          "strHomeTeam": "FC Barcelona",
+          "strHomeTeamBadge": "f378eb1ea04e53999b89051aa3244de6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Real Madrid CF",
+          "strAwayTeamBadge": "7dacaa934fe4be00f23c1e209b5ef947.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/fc-barcelona-vs-real-madrid-cf-luc-0300-ngay-26-10-2026-o17pjiodep0by7j"
+        }
+      ]
+    },
+    {
+      "strLeague": "ပြင်သစ် - Ligue 1",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T01:15:00+06:30",
+          "strHomeTeam": "RC Lens",
+          "strHomeTeamBadge": "b8c5038ebb0e21b09a72008b7cb6219f.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Paris FC",
+          "strAwayTeamBadge": "83a982f8219a768e7cd29d1ac765b199.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/rc-lens-vs-paris-fc-luc-0145-ngay-25-10-2026-ndkz6i3yowocxq3"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "AS Monaco",
+          "strHomeTeamBadge": "693af0d277fe3179594695614dce8666.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Lille OSC",
+          "strAwayTeamBadge": "28e94925fdcc848f86a544a1cedcceed.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/as-monaco-vs-lille-osc-luc-2100-ngay-25-10-2026-wv78xivz6lnfokr"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:45:00+06:30",
+          "strHomeTeam": "AJ Auxerre",
+          "strHomeTeamBadge": "8c03e57af9e8bec20a3ed2f5aaddf78b.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Le Mans",
+          "strAwayTeamBadge": "5de17e3d35ef312559baf1f8c0b0b585.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/aj-auxerre-vs-le-mans-luc-2315-ngay-25-10-2026-jr7owip8d0lugq0"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:45:00+06:30",
+          "strHomeTeam": "Angers SCO",
+          "strHomeTeamBadge": "526150064f4f983d670deb33fa6385b6.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "FC Lorient",
+          "strAwayTeamBadge": "b593727321793084b1f7804aebedc31a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/angers-sco-vs-fc-lorient-luc-2315-ngay-25-10-2026-o17pjiompx0ty7j"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:45:00+06:30",
+          "strHomeTeam": "Olympique de Marseille",
+          "strHomeTeamBadge": "a450173b3d636ba2c86d3d7c5bdc4026.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Le Havre",
+          "strAwayTeamBadge": "8fd50a53dad5ea4fd2d32bd3ce727f58.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/olympique-de-marseille-vs-le-havre-luc-2315-ngay-25-10-2026-527r3i4xygjs47e"
+        },
+        {
+          "strTimestamp": "2026-10-25T22:45:00+06:30",
+          "strHomeTeam": "Stade Rennais",
+          "strHomeTeamBadge": "eab8f0e847742fd328bb581299bd99ca.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "RC Strasbourg",
+          "strAwayTeamBadge": "998db478bf7c06d5817bf846987a0d0a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/stade-rennais-vs-rc-strasbourg-luc-2315-ngay-25-10-2026-edq09il1038aeqx"
+        }
+      ]
+    },
+    {
+      "strLeague": "ယူအက်စ်အေ - Major League Soccer",
+      "events": [
+        {
+          "strTimestamp": "2026-10-25T00:00:00+06:30",
+          "strHomeTeam": "CLB Montreal Impact",
+          "strHomeTeamBadge": "abd87a03b9befd43df6c45c9b17e9a79.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Nashville",
+          "strAwayTeamBadge": "eafb707bc6f8028dc71923176915c8e3.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-montreal-impact-vs-clb-nashville-luc-0030-ngay-25-10-2026-vrqwni432mxt4qn"
+        },
+        {
+          "strTimestamp": "2026-10-25T02:00:00+06:30",
+          "strHomeTeam": "CLB Columbus Crew",
+          "strHomeTeamBadge": "b6d8f81e8454813b3e672b179e627d3a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Toronto",
+          "strAwayTeamBadge": "a6f6290d4b7699729dc19349484841bf.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-columbus-crew-vs-clb-toronto-luc-0230-ngay-25-10-2026-wv78xivmyg1bokr"
+        },
+        {
+          "strTimestamp": "2026-10-25T04:00:00+06:30",
+          "strHomeTeam": "New York Red Bulls",
+          "strHomeTeamBadge": "8b8fe90668461b90ddc20516b0e6796d.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Inter Miami",
+          "strAwayTeamBadge": "976fe1d29c112f4baeb844cdda2f04cb.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/new-york-red-bulls-vs-inter-miami-luc-0430-ngay-25-10-2026-edq09ilowewceqx"
+        },
+        {
+          "strTimestamp": "2026-10-25T06:00:00+06:30",
+          "strHomeTeam": "Atlanta Utd",
+          "strHomeTeamBadge": "dcb67dd58619e29d84853ac2e4ac5e27.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Chicago Fire",
+          "strAwayTeamBadge": "929fe1b737e458218cbe8ce00a55a05c.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/atlanta-utd-vs-clb-chicago-fire-luc-0630-ngay-25-10-2026-69759igzxdebgk2"
+        },
+        {
+          "strTimestamp": "2026-10-25T09:00:00+06:30",
+          "strHomeTeam": "Portland Timbers",
+          "strHomeTeamBadge": "5dcc5306778fc1089f808833ac7fc477.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Charlotte FC",
+          "strAwayTeamBadge": "5c01731e3c513a3797c85b95c436e0d9.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/portland-timbers-vs-charlotte-fc-luc-0930-ngay-25-10-2026-wv78xivmyz1hokr"
+        },
+        {
+          "strTimestamp": "2026-10-26T07:30:00+06:30",
+          "strHomeTeam": "Los Angeles FC",
+          "strHomeTeamBadge": "9c5ad5227377e12b87f77790d3d88c1c.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB LA Galaxy",
+          "strAwayTeamBadge": "8ef755c4d2e1aed96dc5d291977c1043.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/los-angeles-fc-vs-clb-la-galaxy-luc-0800-ngay-26-10-2026-o07dni5v86oimkn"
+        }
+      ]
+    },
+    {
+      "strLeague": "အင်္ဂလန် - Premier League",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T18:00:00+06:30",
+          "strHomeTeam": "Aston Villa",
+          "strHomeTeamBadge": "a3c32d6a906083118cac2cb796edaab3.png!w80",
+          "intHomeScore": 1,
+          "strAwayTeam": "Manchester City",
+          "strAwayTeamBadge": "c4a6528a2ee147b99c9885ef24385a4e.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/aston-villa-vs-manchester-city-luc-1830-ngay-24-10-2026-ndkz6i3y0gmtxq3?houseId=33982309"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:30:00+06:30",
+          "strHomeTeam": "Arsenal",
+          "strHomeTeamBadge": "d6f5debc456da1119256ab66462ab510.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Everton",
+          "strAwayTeamBadge": "9592d1e0be6375b9e6c5ef169b7aa864.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/arsenal-vs-everton-luc-2100-ngay-24-10-2026-jr7owip84njugq0"
+        },
+        {
+          "strTimestamp": "2026-10-24T20:30:00+06:30",
+          "strHomeTeam": "Coventry City",
+          "strHomeTeamBadge": "759f19ccaecadd33a5c09b535e543410.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Fulham",
+          "strAwayTeamBadge": "29982511f1ea861967c3e6478d6a8a68.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/coventry-city-vs-fulham-luc-2100-ngay-24-10-2026-wv78xivzr33aokr"
+        },
+        {
+          "strTimestamp": "2026-10-24T23:00:00+06:30",
+          "strHomeTeam": "Chelsea",
+          "strHomeTeamBadge": "b365ad0e85e2b1bcbf63f7a0f2f70a79.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Tottenham Hotspur",
+          "strAwayTeamBadge": "8b22ab4041e666b996a2d96f20dea707.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/chelsea-vs-tottenham-hotspur-luc-2330-ngay-24-10-2026-ndkz6i3y0gxhxq3"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "Manchester United",
+          "strHomeTeamBadge": "d39ce586fd7278342dde33b3090b3f75.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bournemouth",
+          "strAwayTeamBadge": "240b30d333c97d293752ab7afd77ccd6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/manchester-united-vs-bournemouth-luc-2100-ngay-25-10-2026-o07dni5pzonsmkn"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "Liverpool",
+          "strHomeTeamBadge": "1cb3d08adac0e2dc1c4f10429d055bfe.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Brighton & Hove Albion FC",
+          "strAwayTeamBadge": "9b43a690d5a09f1e319f036821e8e1d3.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/liverpool-vs-brighton-hove-albion-fc-luc-2100-ngay-25-10-2026-jek33i8rw38f9ko"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "CLB Hull City",
+          "strHomeTeamBadge": "262691204102d2200797f0ac34efb316.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Câu lạc bộ bóng đá Brentford",
+          "strAwayTeamBadge": "60f1c7788be3148a370dbf59f914abfe.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-hull-city-vs-cau-lac-bo-bong-da-brentford-luc-2100-ngay-25-10-2026-8lk2dirplv6az73"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "Crystal Palace",
+          "strHomeTeamBadge": "42396d18444156e640c37476c2b41b93.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Newcastle United",
+          "strAwayTeamBadge": "5dbe320855e3ba772dbce54f940c6fa5.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/crystal-palace-vs-newcastle-united-luc-2100-ngay-25-10-2026-34kgmio360wbeko"
+        },
+        {
+          "strTimestamp": "2026-10-25T23:00:00+06:30",
+          "strHomeTeam": "Sunderland",
+          "strHomeTeamBadge": "957bdc50c307e2a9b526b34b3792da1a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Leeds United",
+          "strAwayTeamBadge": "1d7680c902207ad6cc3a40bc5125bdf5.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/sunderland-vs-clb-leeds-united-luc-2330-ngay-25-10-2026-vrqwni45jr2s4qn"
+        }
+      ]
+    },
+    {
+      "strLeague": "အီတလီ - Serie A",
+      "events": [
+        {
+          "strTimestamp": "2026-10-24T19:30:00+06:30",
+          "strHomeTeam": "CLB Cagliari",
+          "strHomeTeamBadge": "dba65c184e03c860ed919ce192b86c5e.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Bologna F.C. 1909",
+          "strAwayTeamBadge": "c31f023a2cc8adbcc3e24344d81b9609.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "1H",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-cagliari-vs-bologna-fc-1909-luc-2000-ngay-24-10-2026-j374oi0y1r2agqo"
+        },
+        {
+          "strTimestamp": "2026-10-24T19:30:00+06:30",
+          "strHomeTeam": "Calcio Como",
+          "strHomeTeamBadge": "5f7059f40965e5a2cc00987e6bac2f32.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "U.S. Sassuolo Calcio",
+          "strAwayTeamBadge": "616bf242a532f72e970648f2ead423cf.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/calcio-como-vs-us-sassuolo-calcio-luc-2000-ngay-24-10-2026-34kgmio326gheko"
+        },
+        {
+          "strTimestamp": "2026-10-24T22:30:00+06:30",
+          "strHomeTeam": "S.S.C. Napoli",
+          "strHomeTeamBadge": "37ed13d27edccd30e053167962c02b3a.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "A.S. Roma",
+          "strAwayTeamBadge": "7a192686d30c1ad031d2fb605eaf2f2a.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/ssc-napoli-vs-as-roma-luc-2300-ngay-24-10-2026-g6763i5ov9gho7r"
+        },
+        {
+          "strTimestamp": "2026-10-25T01:15:00+06:30",
+          "strHomeTeam": "S.S. Lazio",
+          "strHomeTeamBadge": "5a2ff46efa33abc6b2908eb6279dfbf8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Parma",
+          "strAwayTeamBadge": "9fadd87d190982c8082dddf1567e0b9b.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/ss-lazio-vs-clb-parma-luc-0145-ngay-25-10-2026-l6kegi8nzdzav75"
+        },
+        {
+          "strTimestamp": "2026-10-25T18:00:00+06:30",
+          "strHomeTeam": "Inter Milan",
+          "strHomeTeamBadge": "aa2245702c40f77799a5ad4b119581a8.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "ACF Fiorentina",
+          "strAwayTeamBadge": "858d87ded0cce014bae0c9681af48524.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/inter-milan-vs-acf-fiorentina-luc-1830-ngay-25-10-2026-ndkz6i3yz0jhxq3"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "CLB Genoa",
+          "strHomeTeamBadge": "51474fb68c7da46b9c20ebddccec7766.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "CLB Venezia",
+          "strAwayTeamBadge": "3e724dc0e6fffd01a630b65af348fab6.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/clb-genoa-vs-clb-venezia-luc-2100-ngay-25-10-2026-jr7owip86gpsgq0"
+        },
+        {
+          "strTimestamp": "2026-10-25T20:30:00+06:30",
+          "strHomeTeam": "Atalanta B.C.",
+          "strHomeTeamBadge": "45c9647899b8bf2fb6f988c6c33b964c.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Frosinone",
+          "strAwayTeamBadge": "93c278d5d8d1d5e2d390ff686359963d.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/atalanta-bc-vs-frosinone-luc-2100-ngay-25-10-2026-zrkn6i4gmgnhwql"
+        },
+        {
+          "strTimestamp": "2026-10-25T23:30:00+06:30",
+          "strHomeTeam": "U.S. Lecce",
+          "strHomeTeamBadge": "777d0840066313da8c0f85977e9178be.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "Juventus F.C.",
+          "strAwayTeamBadge": "dc0e43b95c6676c54415bac168472aa4.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/us-lecce-vs-juventus-fc-luc-0000-ngay-26-10-2026-69759ige34xigk2"
+        },
+        {
+          "strTimestamp": "2026-10-26T02:15:00+06:30",
+          "strHomeTeam": "Udinese Calcio",
+          "strHomeTeamBadge": "c7140efe06d93642fcc9805077c49aa5.png!w80",
+          "intHomeScore": 0,
+          "strAwayTeam": "AC Milan",
+          "strAwayTeamBadge": "643ef4101b017dc1495dbd9e9d5cce28.png!w80",
+          "intAwayScore": 0,
+          "strStatus": "NS",
+          "url": "https://www.alafco-kw.com/truc-tiep/udinese-calcio-vs-ac-milan-luc-0245-ngay-26-10-2026-vmqy9iv9j3rsgk9"
+        }
+      ]
+    }
+  ]
+}
