@@ -1,0 +1,30 @@
+{
+  "pre_morning": {
+    "status": "Open1",
+    "update_at": "11 Sep 2026 09:59:31",
+    "set": "1,608.17",
+    "value": "761.28",
+    "twod": "71"
+  },
+  "morning": {
+    "status": "Intermission",
+    "update_at": "11 Sep 2026 12:30:49",
+    "set": "1,604.76",
+    "value": "43,229.58",
+    "twod": "69"
+  },
+  "pre_evening": {
+    "status": "Open2",
+    "update_at": "11 Sep 2026 14:29:51",
+    "set": "1,605.88",
+    "value": "50,502.53",
+    "twod": "82"
+  },
+  "evening": {
+    "status": "OffHour",
+    "update_at": "11 Sep 2026 16:59:38",
+    "set": "1,604.52",
+    "value": "71,213.01",
+    "twod": "23"
+  }
+}
