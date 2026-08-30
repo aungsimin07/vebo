@@ -37,9 +37,12 @@ jobs:
         run: playwright install --with-deps chromium
 
       - name: Run Scrape Script
+        id: scrape
+        continue-on-error: true
         env:
           TARGET_URL: ${{ github.event.inputs.targetUrl }}
           OUTPUT_PATH: data/vebo_events.json
+          APP_VERSION_PATH: data/app_version.json
           LEAGUE_MAP_JSON: ${{ vars.LEAGUE_MAP_JSON }}
         run: python scripts/scrape_matches.py
 
@@ -48,11 +51,17 @@ jobs:
           cd data
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add vebo_events.json
+          git add vebo_events.json app_version.json
           if ! git diff --staged --quiet; then
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
-            git commit --amend -m "Automated data: Updated vebo_events.json at $TIMESTAMP"
+            git commit --amend -m "Automated data: Updated at $TIMESTAMP"
             git push --force origin data
           else
-            echo "No vebo_events.json changes detected. Skipping commit."
+            echo "No changes detected. Skipping commit."
           fi
+
+      - name: Fail Job If Scrape Failed
+        if: steps.scrape.outcome == 'failure'
+        run: |
+          echo "Scrape script failed — maintenance flag has been set. See logs above."
+          exit 1

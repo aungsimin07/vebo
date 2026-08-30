@@ -20,12 +20,22 @@ from zoneinfo import ZoneInfo
 from bs4 import BeautifulSoup
 from playwright.sync_api import sync_playwright
 
+import app_version
+
 USER_AGENT = (
     "Mozilla/5.0 (Linux; Android 10; K) AppleWebKit/537.36 "
     "(KHTML, like Gecko) Chrome/151.0.0.0 Mobile Safari/537.36"
 )
 TARGET_SELECTOR = "#match-list"
 LOCAL_TZ = ZoneInfo("Asia/Yangon")
+SCRIPT_NAME = "scrape_matches.py"
+
+
+class ScrapeError(Exception):
+    """Raised when the scrape ran without a hard error but didn't find
+    what we expect — e.g. the site's structure changed, or nothing
+    rendered at all. Distinct from network/timeout exceptions, but
+    handled the same way (flags maintenance, leaves prior data alone)."""
 
 STATUS_MAP = {
     "ĐANG TRỰC TIẾP": "Live",
@@ -74,7 +84,12 @@ def get_output_path() -> str:
     return os.environ.get("OUTPUT_PATH", "vebo_events.json")
 
 
-def fetch_html(url: str) -> str:
+def get_app_version_path() -> str:
+    return os.environ.get("APP_VERSION_PATH", app_version.DEFAULT_PATH)
+
+
+def fetch_html(url: str) -> tuple[str, bool]:
+    """Returns (inner_html_of_match_list, selector_wait_succeeded)."""
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -90,9 +105,11 @@ def fetch_html(url: str) -> str:
         # containing a loading spinner, which counts as a child and would
         # make wait_for_selector return immediately before real data loads.
         # Wait for the actual match card elements instead.
+        selector_ok = True
         try:
             page.wait_for_selector(f"{TARGET_SELECTOR} .match-card", timeout=20000)
         except Exception:
+            selector_ok = False
             print(f"[warn] No '.match-card' appeared under '{TARGET_SELECTOR}' "
                   f"after 20s, grabbing whatever is there now.", file=sys.stderr)
             page.wait_for_timeout(3000)
@@ -103,8 +120,8 @@ def fetch_html(url: str) -> str:
         browser.close()
 
         if html is None:
-            raise SystemExit(f"Selector '{TARGET_SELECTOR}' not found on page.")
-        return html
+            raise ScrapeError(f"Selector '{TARGET_SELECTOR}' not found on page.")
+        return html, selector_ok
 
 
 def parse_kickoff_timestamp(time_text: str | None, date_attr: str | None) -> str | None:
@@ -196,12 +213,20 @@ def parse_matches(html: str) -> list[dict]:
     return matches
 
 
-if __name__ == "__main__":
-    target_url = get_target_url()
-    output_path = get_output_path()
-
+def run(target_url: str, output_path: str, app_version_path: str) -> None:
     print(f"[info] Fetching: {target_url}", file=sys.stderr)
-    raw_html = fetch_html(target_url)
+    raw_html, selector_ok = fetch_html(target_url)
+
+    # "Failed" means: didn't get what we wanted — not just an HTTP/timeout
+    # error, but also the site loading fine while the match-card elements
+    # we depend on never showed up (structure changed, JS broke, etc).
+    total_cards = len(BeautifulSoup(raw_html, "html.parser").select(".match-card"))
+    if not selector_ok or total_cards == 0:
+        raise ScrapeError(
+            f"No '.match-card' elements found on the page "
+            f"(selector_wait_ok={selector_ok}, total_cards={total_cards})."
+        )
+
     matches = parse_matches(raw_html)
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
@@ -213,9 +238,29 @@ if __name__ == "__main__":
 
     if unmapped_leagues:
         print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
-              f"add these to LEAGUE_MAP:", file=sys.stderr)
+              f"add these to LEAGUE_MAP_JSON:", file=sys.stderr)
         print(json.dumps(sorted(unmapped_leagues), ensure_ascii=False, indent=2),
               file=sys.stderr)
     else:
-        print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP.",
+        print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP_JSON.",
               file=sys.stderr)
+
+    app_version.set_maintenance(False, SCRIPT_NAME, path=app_version_path)
+    print(f"[info] Marked maintenance=false in {app_version_path}", file=sys.stderr)
+
+
+if __name__ == "__main__":
+    target_url = get_target_url()
+    output_path = get_output_path()
+    app_version_path = get_app_version_path()
+
+    try:
+        run(target_url, output_path, app_version_path)
+    except Exception as e:
+        print(f"[error] Scrape failed: {e}", file=sys.stderr)
+        app_version.set_maintenance(True, SCRIPT_NAME, path=app_version_path)
+        print(f"[info] Marked maintenance=true in {app_version_path}", file=sys.stderr)
+        # Deliberately don't touch output_path here — leave the last known
+        # good vebo_events.json in place rather than overwrite it with
+        # empty/partial data.
+        sys.exit(1)

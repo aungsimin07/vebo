@@ -1,0 +1,97 @@
+name: Manage App Version
+
+on:
+  workflow_dispatch:
+    inputs:
+      latestVersionCode:
+        description: "Latest version code (integer)"
+        required: false
+        type: string
+      latestVersionName:
+        description: "Latest version name (e.g. 1.1)"
+        required: false
+        type: string
+      minSupportedVersionCode:
+        description: "Minimum supported version code (integer)"
+        required: false
+        type: string
+      forceUpdate:
+        description: "Force update?"
+        required: false
+        type: boolean
+      updateUrl:
+        description: "Update URL (store link)"
+        required: false
+        type: string
+      releaseNotesJson:
+        description: 'Release notes to merge, e.g. {"en":"...","my":"..."}'
+        required: false
+        type: string
+      metadataJson:
+        description: 'Metadata to merge, e.g. {"key":"value"}'
+        required: false
+        type: string
+      maintenance:
+        description: "Set maintenance mode manually"
+        required: false
+        type: boolean
+
+permissions:
+  contents: write
+
+jobs:
+  manage-app-version:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Checkout Data Branch
+        uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.10'
+
+      - name: Run Manage App Version Script
+        env:
+          LATEST_VERSION_CODE: ${{ github.event.inputs.latestVersionCode }}
+          LATEST_VERSION_NAME: ${{ github.event.inputs.latestVersionName }}
+          MIN_SUPPORTED_VERSION_CODE: ${{ github.event.inputs.minSupportedVersionCode }}
+          FORCE_UPDATE: ${{ github.event.inputs.forceUpdate }}
+          UPDATE_URL: ${{ github.event.inputs.updateUrl }}
+          RELEASE_NOTES_JSON: ${{ github.event.inputs.releaseNotesJson }}
+          METADATA_JSON: ${{ github.event.inputs.metadataJson }}
+          MAINTENANCE: ${{ github.event.inputs.maintenance }}
+        run: |
+          ARGS=(--path data/app_version.json)
+          [ -n "$LATEST_VERSION_CODE" ] && ARGS+=(--latest-version-code "$LATEST_VERSION_CODE")
+          [ -n "$LATEST_VERSION_NAME" ] && ARGS+=(--latest-version-name "$LATEST_VERSION_NAME")
+          [ -n "$MIN_SUPPORTED_VERSION_CODE" ] && ARGS+=(--min-supported-version-code "$MIN_SUPPORTED_VERSION_CODE")
+          [ -n "$FORCE_UPDATE" ] && ARGS+=(--force-update "$FORCE_UPDATE")
+          [ -n "$UPDATE_URL" ] && ARGS+=(--update-url "$UPDATE_URL")
+          [ -n "$RELEASE_NOTES_JSON" ] && ARGS+=(--release-notes-json "$RELEASE_NOTES_JSON")
+          [ -n "$METADATA_JSON" ] && ARGS+=(--metadata-json "$METADATA_JSON")
+          if [ -n "$MAINTENANCE" ]; then
+            ARGS+=(--maintenance "$MAINTENANCE" --sync-by "manual-workflow (${{ github.actor }})")
+          fi
+          python scripts/manage_app_version.py "${ARGS[@]}"
+
+      - name: Commit and Push to Data Branch
+        run: |
+          cd data
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add app_version.json
+          if ! git diff --staged --quiet; then
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            git commit --amend -m "Automated data: Updated app_version.json at $TIMESTAMP"
+            git push --force origin data
+          else
+            echo "No app_version.json changes detected. Skipping commit."
+          fi
