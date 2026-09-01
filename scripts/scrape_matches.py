@@ -38,9 +38,13 @@ class ScrapeError(Exception):
     handled the same way (flags maintenance, leaves prior data alone)."""
 
 STATUS_MAP = {
-    "ĐANG TRỰC TIẾP": "Live",
-    "CHƯA BẮT ĐẦU": "Upcoming",
+    "ĐANG TRỰC TIẾP": "1H",
+    "CHƯA BẮT ĐẦU": "NS",
 }
+
+# Populated during parsing with any raw status text not found in
+# STATUS_MAP, so we can report new statuses that need a code.
+unmapped_statuses: set[str] = set()
 
 LEAGUE_MAP_ENV_VAR = "LEAGUE_MAP_JSON"
 
@@ -150,6 +154,17 @@ def parse_kickoff_timestamp(time_text: str | None, date_attr: str | None) -> str
     return dt.isoformat()
 
 
+def parse_score(score_text: str | None) -> tuple[int, int]:
+    """Extract 'X - Y' into (X, Y) as ints. Falls back to (0, 0) when
+    there's no score yet (e.g. an upcoming match)."""
+    if not score_text:
+        return 0, 0
+    match = re.match(r"(\d+)\s*-\s*(\d+)", score_text)
+    if not match:
+        return 0, 0
+    return int(match.group(1)), int(match.group(2))
+
+
 def text_or_none(node) -> str | None:
     if node is None:
         return None
@@ -171,7 +186,9 @@ def parse_team(node) -> dict | None:
 def parse_match_card(card) -> dict:
     status_node = card.select_one(".match-card__status.streaming, .match-card__status")
     status_raw = text_or_none(status_node)
-    status = STATUS_MAP.get(status_raw, status_raw)
+    if status_raw and status_raw not in STATUS_MAP:
+        unmapped_statuses.add(status_raw)
+    status_code = STATUS_MAP.get(status_raw, status_raw)
 
     league_node = card.select_one(".match-card__league span")
     league_raw = text_or_none(league_node)
@@ -187,18 +204,18 @@ def parse_match_card(card) -> dict:
     home_team = parse_team(teams[0]) if len(teams) > 0 else None
     away_team = parse_team(teams[1]) if len(teams) > 1 else None
 
-    score = text_or_none(score_node)
     time_text = text_or_none(time_node)
     kickoff = parse_kickoff_timestamp(time_text, card.get("data-date"))
+    home_score, away_score = parse_score(text_or_none(score_node))
 
     return {
-        "sport": card.get("data-sport"),
         "league": league,
-        "status": status.lower() if status else None,
         "kickoff_time": kickoff,
         "home_team": home_team,
         "away_team": away_team,
-        "score": score,
+        "home_score": home_score,
+        "away_score": away_score,
+        "status_code": status_code,
         "url": link_node.get("href") if link_node else None,
     }
 
@@ -208,9 +225,82 @@ def parse_matches(html: str) -> list[dict]:
     # Only football matches — other sports (and their leagues) are ignored
     # entirely, so league mapping/unmapped-league tracking never sees them.
     cards = soup.select('.match-card[data-sport="football"]')
-    matches = [parse_match_card(card) for card in cards]
-    matches.sort(key=lambda m: (m["kickoff_time"] is None, m["kickoff_time"]))
-    return matches
+    return [parse_match_card(card) for card in cards]
+
+
+def detect_common_base_url(urls: list[str]) -> str | None:
+    """
+    Find the shared directory prefix across a set of badge URLs, e.g.:
+        https://img.gvapi.cc/football/team/1cb3d08...png!w80
+        https://img.gvapi.cc/football/team/62572999...png!w80
+    -> "https://img.gvapi.cc/football/team/"
+
+    Computed fresh each run (rather than hardcoded) since the CDN path
+    could change over time. Needs at least 2 distinct URLs to be safe —
+    with only one sample, the "common prefix" would be the whole URL.
+    """
+    unique_urls = sorted({u for u in urls if u})
+    if len(unique_urls) < 2:
+        return None
+    prefix = os.path.commonprefix(unique_urls)
+    last_slash = prefix.rfind("/")
+    if last_slash == -1:
+        return None
+    base = prefix[: last_slash + 1]
+    if not base.startswith(("http://", "https://")):
+        return None
+    return base
+
+
+def strip_badge_base(url: str | None, base_url: str | None) -> str | None:
+    if not url:
+        return url
+    if base_url and url.startswith(base_url):
+        return url[len(base_url):]
+    return url
+
+
+def build_output(matches: list[dict]) -> dict:
+    """Group flat match dicts by league into the target structure."""
+    all_logo_urls = [
+        m["home_team"]["logo"] if m["home_team"] else None for m in matches
+    ] + [
+        m["away_team"]["logo"] if m["away_team"] else None for m in matches
+    ]
+    base_url = detect_common_base_url(all_logo_urls)
+    if base_url:
+        print(f"[info] Team badge base URL detected: {base_url} "
+              f"(stripped from strHomeTeamBadge/strAwayTeamBadge)", file=sys.stderr)
+    else:
+        print("[warn] Could not determine a common team badge base URL "
+              "(fewer than 2 distinct badge URLs this run) — storing full URLs.",
+              file=sys.stderr)
+
+    leagues_map: dict[str, list[dict]] = {}
+    for m in matches:
+        league_name = m["league"] or "Unknown"
+        home_logo = m["home_team"]["logo"] if m["home_team"] else None
+        away_logo = m["away_team"]["logo"] if m["away_team"] else None
+        event = {
+            "strTimestamp": m["kickoff_time"],
+            "strHomeTeam": m["home_team"]["name"] if m["home_team"] else None,
+            "strHomeTeamBadge": strip_badge_base(home_logo, base_url),
+            "intHomeScore": m["home_score"],
+            "strAwayTeam": m["away_team"]["name"] if m["away_team"] else None,
+            "strAwayTeamBadge": strip_badge_base(away_logo, base_url),
+            "intAwayScore": m["away_score"],
+            "strStatus": m["status_code"],
+            "url": m["url"],
+        }
+        leagues_map.setdefault(league_name, []).append(event)
+
+    leagues = []
+    for league_name in sorted(leagues_map.keys()):
+        events = leagues_map[league_name]
+        events.sort(key=lambda e: (e["strTimestamp"] is None, e["strTimestamp"]))
+        leagues.append({"strLeague": league_name, "events": events})
+
+    return {"leagues": leagues}
 
 
 def run(target_url: str, output_path: str, app_version_path: str) -> None:
@@ -228,13 +318,16 @@ def run(target_url: str, output_path: str, app_version_path: str) -> None:
         )
 
     matches = parse_matches(raw_html)
+    output = build_output(matches)
 
     os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(matches, f, ensure_ascii=False, indent=2)
+        json.dump(output, f, ensure_ascii=False, indent=2)
         f.write("\n")
 
-    print(f"[info] Wrote {len(matches)} match(es) to {output_path}", file=sys.stderr)
+    total_events = sum(len(l["events"]) for l in output["leagues"])
+    print(f"[info] Wrote {total_events} event(s) across {len(output['leagues'])} "
+          f"league(s) to {output_path}", file=sys.stderr)
 
     if unmapped_leagues:
         print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
@@ -243,6 +336,12 @@ def run(target_url: str, output_path: str, app_version_path: str) -> None:
               file=sys.stderr)
     else:
         print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP_JSON.",
+              file=sys.stderr)
+
+    if unmapped_statuses:
+        print(f"[info] Unmapped statuses found ({len(unmapped_statuses)}), "
+              f"add these to STATUS_MAP:", file=sys.stderr)
+        print(json.dumps(sorted(unmapped_statuses), ensure_ascii=False, indent=2),
               file=sys.stderr)
 
     app_version.set_maintenance(False, SCRIPT_NAME, path=app_version_path)
