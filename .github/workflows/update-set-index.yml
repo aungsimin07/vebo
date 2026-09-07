@@ -1,0 +1,84 @@
+name: Update SET Index (today.json)
+
+on:
+  repository_dispatch:
+    types:
+      - scrape-pre-morning
+      - scrape-morning
+      - scrape-pre-evening
+      - scrape-evening
+  workflow_dispatch:
+    inputs:
+      slot:
+        description: "Slot to run (manual test)"
+        required: true
+        type: choice
+        options:
+          - pre_morning
+          - morning
+          - pre_evening
+          - evening
+
+permissions:
+  contents: write
+
+jobs:
+  update-set-index:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v7
+
+      - name: Checkout Data Branch
+        uses: actions/checkout@v7
+        with:
+          ref: data
+          path: data
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v7
+        with:
+          python-version: '3.10'
+
+      - name: Install Dependencies
+        run: pip install -r requirements.txt
+
+      - name: Install Playwright Browsers
+        run: playwright install --with-deps chromium
+
+      - name: Determine Slot
+        id: determine-slot
+        run: |
+          if [ "${{ github.event_name }}" = "repository_dispatch" ]; then
+            case "${{ github.event.action }}" in
+              scrape-pre-morning) SLOT=pre_morning ;;
+              scrape-morning) SLOT=morning ;;
+              scrape-pre-evening) SLOT=pre_evening ;;
+              scrape-evening) SLOT=evening ;;
+              *) echo "Unknown event action: ${{ github.event.action }}"; exit 1 ;;
+            esac
+          else
+            SLOT="${{ github.event.inputs.slot }}"
+          fi
+          echo "slot=$SLOT" >> "$GITHUB_OUTPUT"
+
+      - name: Run Scrape Script
+        env:
+          SLOT: ${{ steps.determine-slot.outputs.slot }}
+          TODAY_JSON_PATH: data/today.json
+        run: python scripts/scrape_set_index.py
+
+      - name: Commit and Push to Data Branch
+        run: |
+          cd data
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add today.json
+          if ! git diff --staged --quiet; then
+            TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
+            git commit --amend -m "Automated data: Updated today.json (${{ steps.determine-slot.outputs.slot }}) at $TIMESTAMP"
+            git push --force origin data
+          else
+            echo "No today.json changes detected. Skipping commit."
+          fi
