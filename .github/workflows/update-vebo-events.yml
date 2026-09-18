@@ -1,11 +1,14 @@
 name: Update Vebo Events
 
 on:
+  repository_dispatch:
+    types:
+      - scrape-vebo-events
   workflow_dispatch:
     inputs:
       targetUrl:
-        description: "URL to scrape"
-        required: true
+        description: "URL to scrape (leave blank to use the VEBO_TARGET_URL repo variable)"
+        required: false
         type: string
 
 permissions:
@@ -36,11 +39,30 @@ jobs:
       - name: Install Playwright Browsers
         run: playwright install --with-deps chromium
 
+      - name: Determine Target URL
+        id: determine-url
+        env:
+          MANUAL_URL: ${{ github.event.inputs.targetUrl }}
+          DISPATCH_URL: ${{ github.event.client_payload.targetUrl }}
+          FALLBACK_URL: ${{ vars.VEBO_TARGET_URL }}
+        run: |
+          if [ -n "$MANUAL_URL" ]; then
+            URL="$MANUAL_URL"
+          elif [ -n "$DISPATCH_URL" ]; then
+            URL="$DISPATCH_URL"
+          elif [ -n "$FALLBACK_URL" ]; then
+            URL="$FALLBACK_URL"
+          else
+            echo "No targetUrl input, client_payload.targetUrl, or VEBO_TARGET_URL repo variable set."
+            exit 1
+          fi
+          echo "url=$URL" >> "$GITHUB_OUTPUT"
+
       - name: Run Scrape Script
         id: scrape
         continue-on-error: true
         env:
-          TARGET_URL: ${{ github.event.inputs.targetUrl }}
+          TARGET_URL: ${{ steps.determine-url.outputs.url }}
           OUTPUT_PATH: data/vebo_events.json
           APP_VERSION_PATH: data/app_version.json
           LEAGUE_MAP_JSON: ${{ vars.LEAGUE_MAP_JSON }}
