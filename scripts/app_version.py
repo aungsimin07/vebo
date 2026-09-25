@@ -61,3 +61,15 @@ def set_maintenance(
     data["maintenance"]["last_sync_at"] = utc_now_iso()
     save(data, path)
     return data
+
+
+def set_metadata(key: str, value, path: str = DEFAULT_PATH) -> dict:
+    """
+    Set a single key in the metadata block, preserving every other field
+    and every other metadata key untouched.
+    """
+    data = load(path)
+    data.setdefault("metadata", {})
+    data["metadata"][key] = value
+    save(data, path)
+    return data

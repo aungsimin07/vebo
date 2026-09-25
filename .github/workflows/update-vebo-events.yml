@@ -65,6 +65,7 @@ jobs:
           TARGET_URL: ${{ steps.determine-url.outputs.url }}
           OUTPUT_PATH: data/vebo_events.json
           APP_VERSION_PATH: data/app_version.json
+          DEBUG_HTML_PATH: data/index.html
           LEAGUE_MAP_JSON: ${{ vars.LEAGUE_MAP_JSON }}
         run: python scripts/scrape_matches.py
 
@@ -74,6 +75,9 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add vebo_events.json app_version.json
+          if [ -f index.html ]; then
+            git add index.html
+          fi
           if ! git diff --staged --quiet; then
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")
             git commit --amend -m "Automated data: Updated at $TIMESTAMP"

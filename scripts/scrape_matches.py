@@ -92,8 +92,20 @@ def get_app_version_path() -> str:
     return os.environ.get("APP_VERSION_PATH", app_version.DEFAULT_PATH)
 
 
-def fetch_html(url: str) -> tuple[str, bool]:
-    """Returns (inner_html_of_match_list, selector_wait_succeeded)."""
+def get_debug_html_path() -> str:
+    return os.environ.get("DEBUG_HTML_PATH", "index.html")
+
+
+def fetch_html(url: str) -> tuple[str | None, bool, str | None]:
+    """
+    Returns (inner_html_of_match_list_or_None, selector_wait_succeeded,
+    full_page_html_or_None).
+
+    full_page_html is a best-effort snapshot of page.content() captured
+    even on failure paths (bad selector, nothing rendered, navigation
+    hiccups) — the caller can persist it for debugging when something
+    goes wrong, since it's the actual page the run encountered.
+    """
     with sync_playwright() as p:
         browser = p.chromium.launch(headless=True)
         context = browser.new_context(
@@ -103,29 +115,54 @@ def fetch_html(url: str) -> tuple[str, bool]:
         )
         page = context.new_page()
 
-        page.goto(url, wait_until="domcontentloaded", timeout=30000)
-
-        # Don't just wait for "any child" of #match-list — it starts out
-        # containing a loading spinner, which counts as a child and would
-        # make wait_for_selector return immediately before real data loads.
-        # Wait for the actual match card elements instead.
+        html = None
         selector_ok = True
-        try:
-            page.wait_for_selector(f"{TARGET_SELECTOR} .match-card", timeout=20000)
-        except Exception:
-            selector_ok = False
-            print(f"[warn] No '.match-card' appeared under '{TARGET_SELECTOR}' "
-                  f"after 20s, grabbing whatever is there now.", file=sys.stderr)
-            page.wait_for_timeout(3000)
+        full_page_html = None
 
-        element = page.query_selector(TARGET_SELECTOR)
-        html = element.inner_html() if element else None
+        try:
+            page.goto(url, wait_until="domcontentloaded", timeout=30000)
+
+            # Don't just wait for "any child" of #match-list — it starts out
+            # containing a loading spinner, which counts as a child and
+            # would make wait_for_selector return immediately before real
+            # data loads. Wait for the actual match card elements instead.
+            try:
+                page.wait_for_selector(f"{TARGET_SELECTOR} .match-card", timeout=20000)
+            except Exception:
+                selector_ok = False
+                print(f"[warn] No '.match-card' appeared under '{TARGET_SELECTOR}' "
+                      f"after 20s, grabbing whatever is there now.", file=sys.stderr)
+                page.wait_for_timeout(3000)
+
+            element = page.query_selector(TARGET_SELECTOR)
+            html = element.inner_html() if element else None
+
+            try:
+                full_page_html = page.content()
+            except Exception as e:
+                print(f"[warn] Could not capture full page HTML: {e}", file=sys.stderr)
+        except Exception as e:
+            print(f"[warn] Navigation/interaction error: {e}", file=sys.stderr)
+            selector_ok = False
+            try:
+                full_page_html = page.content()
+            except Exception:
+                pass
 
         browser.close()
+        return html, selector_ok, full_page_html
 
-        if html is None:
-            raise ScrapeError(f"Selector '{TARGET_SELECTOR}' not found on page.")
-        return html, selector_ok
+
+def write_debug_html(html: str | None, path: str) -> None:
+    if not html:
+        print("[warn] No full page HTML captured — skipping debug snapshot.",
+              file=sys.stderr)
+        return
+    os.makedirs(os.path.dirname(path) or ".", exist_ok=True)
+    with open(path, "w", encoding="utf-8") as f:
+        f.write(html)
+    print(f"[info] Wrote full page HTML snapshot to {path} for debugging.",
+          file=sys.stderr)
 
 
 def parse_kickoff_timestamp(time_text: str | None, date_attr: str | None) -> str | None:
@@ -260,8 +297,9 @@ def strip_badge_base(url: str | None, base_url: str | None) -> str | None:
     return url
 
 
-def build_output(matches: list[dict]) -> dict:
-    """Group flat match dicts by league into the target structure."""
+def build_output(matches: list[dict]) -> tuple[dict, str | None]:
+    """Group flat match dicts by league into the target structure.
+    Returns (output_dict, detected_badge_base_url)."""
     all_logo_urls = [
         m["home_team"]["logo"] if m["home_team"] else None for m in matches
     ] + [
@@ -300,61 +338,78 @@ def build_output(matches: list[dict]) -> dict:
         events.sort(key=lambda e: (e["strTimestamp"] is None, e["strTimestamp"]))
         leagues.append({"strLeague": league_name, "events": events})
 
-    return {"leagues": leagues}
+    return {"leagues": leagues}, base_url
 
 
-def run(target_url: str, output_path: str, app_version_path: str) -> None:
+def run(target_url: str, output_path: str, app_version_path: str, debug_html_path: str) -> None:
     print(f"[info] Fetching: {target_url}", file=sys.stderr)
-    raw_html, selector_ok = fetch_html(target_url)
+    raw_html, selector_ok, full_page_html = fetch_html(target_url)
 
-    # "Failed" means: didn't get what we wanted — not just an HTTP/timeout
-    # error, but also the site loading fine while the match-card elements
-    # we depend on never showed up (structure changed, JS broke, etc).
-    total_cards = len(BeautifulSoup(raw_html, "html.parser").select(".match-card"))
-    if not selector_ok or total_cards == 0:
-        raise ScrapeError(
-            f"No '.match-card' elements found on the page "
-            f"(selector_wait_ok={selector_ok}, total_cards={total_cards})."
-        )
+    try:
+        # "Failed" means: didn't get what we wanted — not just an
+        # HTTP/timeout error, but also the site loading fine while the
+        # match-card elements we depend on never showed up (structure
+        # changed, JS broke, etc).
+        total_cards = 0
+        if raw_html:
+            total_cards = len(BeautifulSoup(raw_html, "html.parser").select(".match-card"))
 
-    matches = parse_matches(raw_html)
-    output = build_output(matches)
+        if raw_html is None or not selector_ok or total_cards == 0:
+            raise ScrapeError(
+                f"No '.match-card' elements found on the page "
+                f"(selector_wait_ok={selector_ok}, total_cards={total_cards})."
+            )
 
-    os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
-    with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(output, f, ensure_ascii=False, indent=2)
-        f.write("\n")
+        matches = parse_matches(raw_html)
+        output, base_url = build_output(matches)
 
-    total_events = sum(len(l["events"]) for l in output["leagues"])
-    print(f"[info] Wrote {total_events} event(s) across {len(output['leagues'])} "
-          f"league(s) to {output_path}", file=sys.stderr)
+        os.makedirs(os.path.dirname(output_path) or ".", exist_ok=True)
+        with open(output_path, "w", encoding="utf-8") as f:
+            json.dump(output, f, ensure_ascii=False, indent=2)
+            f.write("\n")
 
-    if unmapped_leagues:
-        print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
-              f"add these to LEAGUE_MAP_JSON:", file=sys.stderr)
-        print(json.dumps(sorted(unmapped_leagues), ensure_ascii=False, indent=2),
-              file=sys.stderr)
-    else:
-        print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP_JSON.",
-              file=sys.stderr)
+        total_events = sum(len(l["events"]) for l in output["leagues"])
+        print(f"[info] Wrote {total_events} event(s) across {len(output['leagues'])} "
+              f"league(s) to {output_path}", file=sys.stderr)
 
-    if unmapped_statuses:
-        print(f"[info] Unmapped statuses found ({len(unmapped_statuses)}), "
-              f"add these to STATUS_MAP:", file=sys.stderr)
-        print(json.dumps(sorted(unmapped_statuses), ensure_ascii=False, indent=2),
-              file=sys.stderr)
+        if unmapped_leagues:
+            print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
+                  f"add these to LEAGUE_MAP_JSON:", file=sys.stderr)
+            print(json.dumps(sorted(unmapped_leagues), ensure_ascii=False, indent=2),
+                  file=sys.stderr)
+        else:
+            print("[info] No unmapped leagues — all leagues resolved via LEAGUE_MAP_JSON.",
+                  file=sys.stderr)
 
-    app_version.set_maintenance(False, SCRIPT_NAME, path=app_version_path)
-    print(f"[info] Marked maintenance=false in {app_version_path}", file=sys.stderr)
+        if unmapped_statuses:
+            print(f"[info] Unmapped statuses found ({len(unmapped_statuses)}), "
+                  f"add these to STATUS_MAP:", file=sys.stderr)
+            print(json.dumps(sorted(unmapped_statuses), ensure_ascii=False, indent=2),
+                  file=sys.stderr)
+
+        if base_url:
+            app_version.set_metadata("socoImageCdn", base_url, path=app_version_path)
+            print(f"[info] Saved socoImageCdn={base_url} to {app_version_path} metadata",
+                  file=sys.stderr)
+
+        app_version.set_maintenance(False, SCRIPT_NAME, path=app_version_path)
+        print(f"[info] Marked maintenance=false in {app_version_path}", file=sys.stderr)
+    except Exception:
+        # Persist the full page as encountered, for debugging — this
+        # catches not just the "no match cards" case above, but any
+        # failure in parsing/building/writing that happens after fetch.
+        write_debug_html(full_page_html, debug_html_path)
+        raise
 
 
 if __name__ == "__main__":
     target_url = get_target_url()
     output_path = get_output_path()
     app_version_path = get_app_version_path()
+    debug_html_path = get_debug_html_path()
 
     try:
-        run(target_url, output_path, app_version_path)
+        run(target_url, output_path, app_version_path, debug_html_path)
     except Exception as e:
         print(f"[error] Scrape failed: {e}", file=sys.stderr)
         app_version.set_maintenance(True, SCRIPT_NAME, path=app_version_path)
