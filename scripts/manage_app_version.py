@@ -50,6 +50,8 @@ def build_parser() -> argparse.ArgumentParser:
                     help='JSON object merged into releaseNotes, e.g. \'{"en":"...","my":"..."}\'')
     p.add_argument("--metadata-json", type=parse_json_object,
                     help='JSON object merged into metadata, e.g. \'{"key":"value"}\'')
+    p.add_argument("--allow-player-before-kickoff", type=parse_bool,
+                    help="Sets metadata.allowPlayerBeforeKickoff (true/false)")
     p.add_argument("--maintenance", type=parse_bool)
     p.add_argument("--sync-by", type=str, default="manage_app_version.py (manual)")
     return p
@@ -77,6 +79,10 @@ def main() -> None:
     if args.metadata_json:
         data.setdefault("metadata", {})
         data["metadata"].update(args.metadata_json)
+
+    if args.allow_player_before_kickoff is not None:
+        data.setdefault("metadata", {})
+        data["metadata"]["allowPlayerBeforeKickoff"] = args.allow_player_before_kickoff
 
     if args.maintenance is not None:
         data.setdefault("maintenance", dict(app_version.DEFAULT_APP_VERSION["maintenance"]))

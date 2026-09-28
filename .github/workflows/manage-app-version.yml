@@ -18,7 +18,12 @@ on:
       forceUpdate:
         description: "Force update?"
         required: false
-        type: boolean
+        type: choice
+        default: unchanged
+        options:
+          - unchanged
+          - "true"
+          - "false"
       updateUrl:
         description: "Update URL (store link)"
         required: false
@@ -31,10 +36,24 @@ on:
         description: 'Metadata to merge, e.g. {"key":"value"}'
         required: false
         type: string
+      allowPlayerBeforeKickoff:
+        description: "Allow opening the player before a match has started (testing)"
+        required: false
+        type: choice
+        default: unchanged
+        options:
+          - unchanged
+          - "true"
+          - "false"
       maintenance:
         description: "Set maintenance mode manually"
         required: false
-        type: boolean
+        type: choice
+        default: unchanged
+        options:
+          - unchanged
+          - "true"
+          - "false"
 
 permissions:
   contents: write
@@ -67,19 +86,32 @@ jobs:
           UPDATE_URL: ${{ github.event.inputs.updateUrl }}
           RELEASE_NOTES_JSON: ${{ github.event.inputs.releaseNotesJson }}
           METADATA_JSON: ${{ github.event.inputs.metadataJson }}
+          ALLOW_PLAYER_BEFORE_KICKOFF: ${{ github.event.inputs.allowPlayerBeforeKickoff }}
           MAINTENANCE: ${{ github.event.inputs.maintenance }}
         run: |
           ARGS=(--path data/app_version.json)
+
+          # Only pass a boolean flag when explicitly set to true/false
+          # (anything else, e.g. "unchanged", is skipped).
+          add_bool_arg() {
+            if [ "$2" = "true" ] || [ "$2" = "false" ]; then
+              ARGS+=("$1" "$2")
+            fi
+          }
+
           [ -n "$LATEST_VERSION_CODE" ] && ARGS+=(--latest-version-code "$LATEST_VERSION_CODE")
           [ -n "$LATEST_VERSION_NAME" ] && ARGS+=(--latest-version-name "$LATEST_VERSION_NAME")
           [ -n "$MIN_SUPPORTED_VERSION_CODE" ] && ARGS+=(--min-supported-version-code "$MIN_SUPPORTED_VERSION_CODE")
-          [ -n "$FORCE_UPDATE" ] && ARGS+=(--force-update "$FORCE_UPDATE")
           [ -n "$UPDATE_URL" ] && ARGS+=(--update-url "$UPDATE_URL")
           [ -n "$RELEASE_NOTES_JSON" ] && ARGS+=(--release-notes-json "$RELEASE_NOTES_JSON")
           [ -n "$METADATA_JSON" ] && ARGS+=(--metadata-json "$METADATA_JSON")
-          if [ -n "$MAINTENANCE" ]; then
+
+          add_bool_arg --force-update "$FORCE_UPDATE"
+          add_bool_arg --allow-player-before-kickoff "$ALLOW_PLAYER_BEFORE_KICKOFF"
+          if [ "$MAINTENANCE" = "true" ] || [ "$MAINTENANCE" = "false" ]; then
             ARGS+=(--maintenance "$MAINTENANCE" --sync-by "manual-workflow (${{ github.actor }})")
           fi
+
           python scripts/manage_app_version.py "${ARGS[@]}"
 
       - name: Commit and Push to Data Branch

@@ -21,7 +21,9 @@ DEFAULT_APP_VERSION = {
         "sync_by": "",
         "last_sync_at": "",
     },
-    "metadata": {},
+    "metadata": {
+        "allowPlayerBeforeKickoff": False,
+    },
 }
 
 
