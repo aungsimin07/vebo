@@ -66,6 +66,7 @@ jobs:
           OUTPUT_PATH: data/vebo_events.json
           APP_VERSION_PATH: data/app_version.json
           DEBUG_HTML_PATH: data/index.html
+          IMAGES_DIR: data/images
           LEAGUE_MAP_JSON: ${{ vars.LEAGUE_MAP_JSON }}
         run: python scripts/scrape_matches.py
 
@@ -77,6 +78,9 @@ jobs:
           git add vebo_events.json app_version.json
           if [ -f index.html ]; then
             git add index.html
+          fi
+          if [ -d images ]; then
+            git add images
           fi
           if ! git diff --staged --quiet; then
             TIMESTAMP=$(date -u +"%Y-%m-%d %H:%M:%S UTC")

@@ -15,6 +15,7 @@ import os
 import re
 import sys
 from datetime import datetime
+from urllib.parse import urlparse
 from zoneinfo import ZoneInfo
 
 from bs4 import BeautifulSoup
@@ -94,6 +95,10 @@ def get_app_version_path() -> str:
 
 def get_debug_html_path() -> str:
     return os.environ.get("DEBUG_HTML_PATH", "index.html")
+
+
+def get_images_dir() -> str:
+    return os.environ.get("IMAGES_DIR", "images")
 
 
 def fetch_html(url: str) -> tuple[str | None, bool, str | None]:
@@ -341,7 +346,85 @@ def build_output(matches: list[dict]) -> tuple[dict, str | None]:
     return {"leagues": leagues}, base_url
 
 
-def run(target_url: str, output_path: str, app_version_path: str, debug_html_path: str) -> None:
+def badge_filename(url: str) -> str | None:
+    """
+    "https://img.gvapi.cc/football/team/b7fabb98...png!w80" -> "b7fabb98...png"
+
+    Drops the CDN thumbnail suffix (everything from "!" onwards). Returns
+    None if the result isn't a safe plain filename.
+    """
+    name = os.path.basename(urlparse(url).path)
+    name = name.split("!", 1)[0]
+    return name if re.fullmatch(r"[A-Za-z0-9._-]+", name) else None
+
+
+def collect_badge_urls(matches: list[dict]) -> dict[str, str]:
+    """filename -> original (full) badge URL, de-duplicated across matches."""
+    badges: dict[str, str] = {}
+    for m in matches:
+        for team in (m["home_team"], m["away_team"]):
+            if not team or not team["logo"]:
+                continue
+            name = badge_filename(team["logo"])
+            if name:
+                badges.setdefault(name, team["logo"])
+    return badges
+
+
+def download_badges(badges: dict[str, str], images_dir: str, referer: str) -> None:
+    """
+    Download badges that don't exist in images_dir yet (existing files are
+    never re-downloaded). Best-effort: individual failures are logged and
+    skipped, never raised.
+
+    Uses headless Chromium rather than plain HTTP because the image CDN
+    sits behind Cloudflare. Each response is validated (200 + image/*
+    content-type + non-empty body) so a challenge/error page is never
+    saved as if it were an image — otherwise it would be treated as
+    "already downloaded" forever.
+    """
+    os.makedirs(images_dir, exist_ok=True)
+    missing = {
+        name: url for name, url in badges.items()
+        if not os.path.exists(os.path.join(images_dir, name))
+    }
+    print(f"[info] Badges: {len(badges)} total, {len(badges) - len(missing)} "
+          f"already saved, {len(missing)} to download.", file=sys.stderr)
+    if not missing:
+        return
+
+    saved = failed = 0
+    with sync_playwright() as p:
+        browser = p.chromium.launch(headless=True)
+        context = browser.new_context(user_agent=USER_AGENT)
+        page = context.new_page()
+
+        for name, url in missing.items():
+            try:
+                resp = page.goto(url, referer=referer, timeout=20000)
+                status = resp.status if resp else None
+                ctype = (resp.headers.get("content-type") or "") if resp else ""
+                body = resp.body() if resp else b""
+                if status != 200 or not ctype.startswith("image/") or not body:
+                    raise ValueError(
+                        f"status={status}, content-type={ctype!r}, bytes={len(body)}"
+                    )
+                with open(os.path.join(images_dir, name), "wb") as f:
+                    f.write(body)
+                saved += 1
+            except Exception as e:
+                failed += 1
+                print(f"[warn] Badge download failed for {name} ({url}): {e}",
+                      file=sys.stderr)
+
+        browser.close()
+
+    print(f"[info] Badge download done: {saved} saved, {failed} failed.",
+          file=sys.stderr)
+
+
+def run(target_url: str, output_path: str, app_version_path: str,
+        debug_html_path: str, images_dir: str) -> None:
     print(f"[info] Fetching: {target_url}", file=sys.stderr)
     raw_html, selector_ok, full_page_html = fetch_html(target_url)
 
@@ -371,6 +454,15 @@ def run(target_url: str, output_path: str, app_version_path: str, debug_html_pat
         total_events = sum(len(l["events"]) for l in output["leagues"])
         print(f"[info] Wrote {total_events} event(s) across {len(output['leagues'])} "
               f"league(s) to {output_path}", file=sys.stderr)
+
+        # Badge downloading is best-effort: a failure here must not flag
+        # maintenance or discard the (already written) events JSON.
+        try:
+            parsed = urlparse(target_url)
+            referer = f"{parsed.scheme}://{parsed.netloc}/"
+            download_badges(collect_badge_urls(matches), images_dir, referer)
+        except Exception as e:
+            print(f"[warn] Badge download step failed: {e}", file=sys.stderr)
 
         if unmapped_leagues:
             print(f"[info] Unmapped leagues found ({len(unmapped_leagues)}), "
@@ -407,9 +499,10 @@ if __name__ == "__main__":
     output_path = get_output_path()
     app_version_path = get_app_version_path()
     debug_html_path = get_debug_html_path()
+    images_dir = get_images_dir()
 
     try:
-        run(target_url, output_path, app_version_path, debug_html_path)
+        run(target_url, output_path, app_version_path, debug_html_path, images_dir)
     except Exception as e:
         print(f"[error] Scrape failed: {e}", file=sys.stderr)
         app_version.set_maintenance(True, SCRIPT_NAME, path=app_version_path)
